@@ -136,8 +136,6 @@
 		\item Wenn eine Klasse benötigt, dass ihre Unterklassen Kontrolle über die konkrete Auswahl eines Objekttyps haben müssen.
 		\item Zur Insanziierung eines konkreten Objektes welche das Schablonenmethoden Muster verwendet
 	\end{enumerate}
-
-	
 \end{why}
 
 
@@ -194,6 +192,43 @@
 
 \begin{why}
 	Um das Open-Closed Principle einzuhalten.
+\end{why}
+
+
+
+\newpage
+\subsection{Abstrakte Fabrik}
+
+\textit{engl. Abstract Factory}
+
+\begin{defi}
+	Eine Abstrakte Fabrik bietet eine Schnittstelle zur Instanziierung von Familien bestehend aus voneinander abhängigen Objekten
+\end{defi}
+
+\begin{ex}[Java]
+	Im folgenden Beispiel besuchen wir einen Computer auf verschiedene Arten
+	
+	\lstinputlisting[language=Java, caption=Die abstrakte Fabirk]{examples/abstractfactory/GUIFactory.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der Fabrik]{examples/abstractfactory/OSXGUIFactory.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der Fabrik]{examples/abstractfactory/LinuxGUIFactory.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der Fabrik]{examples/abstractfactory/WindowsGUIFactory.java}
+	
+	
+	\lstinputlisting[language=Java, caption=Das zu erstellende Interface]{examples/abstractfactory/NavBar.java}
+	
+	
+	\lstinputlisting[language=Java, caption=Verwendung]{examples/abstractfactory/Main.java}
+	
+\end{ex}
+
+\begin{why}
+	\begin{enumerate}
+		\item Um eine System unabhängig von seiner Produkterzeugung sein soll
+		\item Wenn eine Familie von aufeinander abgestimmten Produkten benötigt wird
+		\item Bei einer Bibliothek welche keine Implementierungen, sondern nur Schnittstellen offen legen soll
+	\end{enumerate}
+	
+	
 \end{why}
 
 
