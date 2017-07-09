@@ -8,6 +8,7 @@
 \usepackage{color}
 
 
+
 \theoremstyle{break}
 \newtheorem{defi}{Definition}[section]
 \newtheorem{ex}{Beispiel}[section]
@@ -62,7 +63,7 @@
 	"Swtich-less" programming. Strategies erlauben es uns ohne switch case anweisungen zwischen verschiedenen Anwendungsfällen Algorithmen zu wechseln.
 \end{why}
 
-
+\newpage
 \subsection{Dekorierer}
 
 \textit{engl. Decorator pattern}
@@ -86,6 +87,23 @@
 
 \begin{why}
 	Wenn Zusatzoperationen welche nur teilweise auftreten auf weitere Objekte delegiert werden sollen, während alte Objekte Fortbestand haben sollen.
+\end{why}
+\newpage
+\subsection{Kompositum}
+
+\textit{engl. Composite pattern}
+
+\begin{defi}
+	Ein Kompositum ist eine Gruppe von Objekten, welche genauso behandelt wird wie eine einzelne Instanz des selben Objekttypen
+\end{defi}
+
+\begin{ex}[Java API: JComponent]
+	In der Java API enthalten ist der JComponent, welcher wiederum weitere Components enthalten kann.
+	Zum Beispiel kann ein JPanel ein Label und ein weiteres Panel mit einem Button und einem Bild enthalten und trotzdem wird das obere JPanel genauso als JComponent behandelt wie die einzelnen enthaltenen JComponents behandelt werden (würden).
+\end{ex}
+
+\begin{why}
+	Wenn Unterscheide zwischen einer einzelnen Ausführung einer Klasse und einer Zusammensetzung dieser für die Verwendung nicht von Relevanz sind.
 \end{why}
 
 
