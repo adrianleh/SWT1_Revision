@@ -73,7 +73,7 @@
 \end{defi}
 
 \begin{ex}[Java]
-	Im folgenden Beispiel werden wird Eis mit Extras "dekorieren".
+	Im folgenden Beispiel werden wir Eis mit Extras "dekorieren".
 	
 	
 	\lstinputlisting[language=Java, caption=Erstellen userer zu dekorierenden Schnittstelle Schnittstelle]{examples/decorator/IceCream.java}
@@ -88,6 +88,8 @@
 \begin{why}
 	Wenn Zusatzoperationen welche nur teilweise auftreten auf weitere Objekte delegiert werden sollen, während alte Objekte Fortbestand haben sollen.
 \end{why}
+
+
 \newpage
 \subsection{Kompositum}
 
@@ -104,6 +106,38 @@
 
 \begin{why}
 	Wenn Unterscheide zwischen einer einzelnen Ausführung einer Klasse und einer Zusammensetzung dieser für die Verwendung nicht von Relevanz sind.
+\end{why}
+
+
+\newpage
+\subsection{Fabrikmethode}
+
+\textit{engl. Factory Method}
+
+\begin{defi}
+	Eine Schnittstelle zur Instanziierung neuer Objekte, welche die konkrete Auswahl der konkreten zu instanziierenden Klasse seinen Unterklassen überlässt.
+\end{defi}
+
+\begin{ex}[Java]
+	Im folgenden Beispiel werden wir Typen von Studenten ihre Smartphones "bauen" lassen. (Studenten bauen i.A. keine Smartphones, aber es musste ja Beispiel her)
+
+	\lstinputlisting[language=Java, caption=Erstellen unserer Schnittestelle\, von welcher die Subklassen durch die Frabrikmethode gebaut werden sollen Schnittstelle]{examples/factorymethod/Smartphone.java}
+	\lstinputlisting[language=Java, caption=1. Schnittstellen Implementierung]{examples/factorymethod/GenericSmartphone.java}
+	\lstinputlisting[language=Java, caption=2. Schnittstellen Implementierung]{examples/factorymethod/uPhone.java}
+	\lstinputlisting[language=Java,caption=Abstrakte Klasse\, welche durch Fabrikmethode Objekte bauen soll]{examples/factorymethod/Student.java}
+	\lstinputlisting[language=Java,caption=Konkrete Implementierung der Klasse mit Fabrikmethode]{examples/factorymethod/NormalStudent.java}
+	\lstinputlisting[language=Java,caption=Weitere Implementierung der Klasse mit Fabrikmethode]{examples/factorymethod/BusinessStudent.java}
+	\lstinputlisting[language=Java, caption=Verwendung]{examples/factorymethod/Main.java}
+\end{ex}
+
+\begin{why}
+	\begin{enumerate}
+		\item 	Wenn eine Klasse die ihre benötigten zu instanziierenden Objekte nicht kennen kann.
+		\item Wenn eine Klasse benötigt, dass ihre Unterklassen Kontrolle über die konkrete Auswahl eines Objekttyps haben müssen.
+		\item Zur Insanziierung eines konkreten Objektes welche das Schablonenmethoden Muster verwendet
+	\end{enumerate}
+
+	
 \end{why}
 
 
