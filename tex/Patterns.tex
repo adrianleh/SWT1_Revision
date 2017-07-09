@@ -166,6 +166,36 @@
 \end{why}
 
 
+\newpage
+\subsection{Besucher}
+
+\textit{engl. Visitor}
+
+\begin{defi}
+	Die Kapselung eines auf einer Objektstruktur ausführenden Algorithmus von dieser.
+\end{defi}
+
+\begin{ex}[Java]
+	Im folgenden Beispiel besuchen wir einen Computer auf verschiedene Arten
+	
+	\lstinputlisting[language=Java, caption=Zu besuchendes Interface]{examples/visitor/ComputerComponent.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der zu besuchenden Schnittstelle]{examples/visitor/Computer.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der zu besuchenden Schnittstelle]{examples/visitor/CPU.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der zu besuchenden Schnittstelle]{examples/visitor/RAM.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der zu besuchenden Schnittstelle]{examples/visitor/GraphicsCard.java}
+	
+	\lstinputlisting[language=Java, caption=Visitorinterface]{examples/visitor/ComputerComponentVisitor.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der besuchenden Schnittstelle]{examples/visitor/FixVisitor.java}
+	\lstinputlisting[language=Java, caption=Konkrete Umsetzung der besuchenden Schnittstelle]{examples/visitor/SpillVisitor.java}
+	
+	\lstinputlisting[language=Java, caption=Verwendung]{examples/visitor/Main.java}
+	
+\end{ex}
+
+\begin{why}
+	Um das Open-Closed Principle einzuhalten.
+\end{why}
+
 
 
 	
