@@ -115,7 +115,7 @@
 \textit{engl. Factory Method}
 
 \begin{defi}
-	Eine Schnittstelle zur Instanziierung neuer Objekte, welche die konkrete Auswahl der konkreten zu instanziierenden Klasse seinen Unterklassen überlässt.
+	Eine abstrakte Klasse zur Instanziierung neuer Objekte, welche die konkrete Auswahl der konkreten zu instanziierenden Klasse seinen Unterklassen überlässt.
 \end{defi}
 
 \begin{ex}[Java]
@@ -140,6 +140,30 @@
 	
 \end{why}
 
+
+
+\newpage
+\subsection{Schablonen Methode}
+
+\textit{engl. Template Method}
+
+\begin{defi}
+	Eine Algorithmen Skelett in einer Operation, welches manche Schritte seien Unterklassen überlässt. (Zu deutsch: Eine Schablonenmethode definiert die Schritte eines Algorithmus, aber überlässt (Teil-)Implementierungen den Unterklassen)
+\end{defi}
+
+\begin{ex}[Java]
+	Im folgenden Beispiel wollen wir Mate Tee und Kaffee kochen. Folgendes Beispiel wurde adaptiert von E. Freeman, et. al; Head First Design Patterns.
+	
+	\lstinputlisting[language=Java, caption=Abstrakte Klasse mit Algorithmus\, welcher nicht alle Schritte implementiert]{examples/templatemethod/CaffeineBeverage.java}
+	\lstinputlisting[language=Java, caption=1. Konkrete Umsetzung der Klasse mit Schablonenmethode]{examples/templatemethod/MateTea.java}
+	\lstinputlisting[language=Java, caption=2. Konkrete Umsetzung der Klasse mit Schablonenmethode]{examples/templatemethod/Coffee.java}
+	\lstinputlisting[language=Java, caption=Verwendung]{examples/templatemethod/Main.java}
+	
+\end{ex}
+
+\begin{why}
+		Um einen Algorithmus zu kapseln, für welchen manche Schritte allerdings nicht allgemein implementiert werden sollen/können.	
+\end{why}
 
 	
 \end{document}
