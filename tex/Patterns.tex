@@ -61,6 +61,33 @@
 \begin{why}
 	"Swtich-less" programming. Strategies erlauben es uns ohne switch case anweisungen zwischen verschiedenen Anwendungsfällen Algorithmen zu wechseln.
 \end{why}
+
+
+\subsection{Dekorierer}
+
+\textit{engl. Decorator pattern}
+
+\begin{defi}
+	Der Dekorierer fügt Objekten dynamisch Funktionalität hinzu.
+\end{defi}
+
+\begin{ex}[Java]
+	Im folgenden Beispiel werden wird Eis mit Extras "dekorieren".
 	
+	
+	\lstinputlisting[language=Java, caption=Erstellen userer zu dekorierenden Schnittstelle Schnittstelle]{examples/decorator/IceCream.java}
+	\lstinputlisting[language=Java, caption=Schnittstellen Implementierung]{examples/decorator/GenericIceCream.java}
+	\lstinputlisting[language=Java,caption=Dekorierer]{examples/decorator/IceCreamDecorator.java}
+	\lstinputlisting[language=Java,caption=Konkrete Implementierung des Dekorierers]{examples/decorator/WithChocolateChips.java}
+	\lstinputlisting[language=Java,caption=Weitere konkrete Implementierung des Dekorierers]{examples/decorator/WithCaramel.java}
+	\lstinputlisting[language=Java, caption=Verwendung]{examples/decorator/Main.java}
+	
+\end{ex}
+
+\begin{why}
+	Wenn Zusatzoperationen welche nur teilweise auftreten auf weitere Objekte delegiert werden sollen, während alte Objekte Fortbestand haben sollen.
+\end{why}
+
+
 	
 \end{document}
