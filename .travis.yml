@@ -13,4 +13,5 @@ deploy:
   - _build/Patterns.pdf
   skip_cleanup: true
   on:
+   branch: master
 tags: true
