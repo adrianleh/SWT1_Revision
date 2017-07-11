@@ -6,8 +6,10 @@
 \usepackage{lipsum}
 \usepackage{listings}
 \usepackage{color}
-
-
+\usepackage{graphicx}
+\usepackage{floatrow}
+\usepackage{float}
+\usepackage[toc,page]{appendix}
 
 \theoremstyle{break}
 \newtheorem{defi}{Definition}[section]
@@ -60,8 +62,15 @@
 \end{ex}
 
 \begin{why}
-	"Swtich-less" programming. Strategies erlauben es uns ohne switch case anweisungen zwischen verschiedenen Anwendungsfällen Algorithmen zu wechseln.
+	'Swtich-less' programming. Strategies erlauben es uns ohne switch case anweisungen zwischen verschiedenen Anwendungsfällen Algorithmen zu wechseln.
 \end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../uml/StrategyPattern.png}
+	\caption{Strategie UML}
+	\floatfoot{Source: (Perseo~commonswiki, Commons-Wiki, 11 Jul 2017)}
+	\label{fig3}
+\end{figure}
 
 \newpage
 \subsection{Dekorierer}
@@ -88,7 +97,12 @@
 \begin{why}
 	Wenn Zusatzoperationen welche nur teilweise auftreten auf weitere Objekte delegiert werden sollen, während alte Objekte Fortbestand haben sollen.
 \end{why}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../uml/DecoratorPattern.png}
+	\caption{Dekorierer UML}
+	\label{fig3}
+\end{figure}
 
 \newpage
 \subsection{Kompositum}
@@ -107,7 +121,12 @@
 \begin{why}
 	Wenn Unterscheide zwischen einer einzelnen Ausführung einer Klasse und einer Zusammensetzung dieser für die Verwendung nicht von Relevanz sind.
 \end{why}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../uml/CompositePattern.png}
+	\caption{Kompositum UML}
+	\label{fig3}
+\end{figure}
 
 \newpage
 \subsection{Fabrikmethode}
@@ -137,7 +156,12 @@
 		\item Zur Insanziierung eines konkreten Objektes welche das Schablonenmethoden Muster verwendet
 	\end{enumerate}
 \end{why}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../uml/FactoryMethodPattern.png}
+	\caption{Fabrikmethode UML}
+	\label{fig3}
+\end{figure}
 
 
 \newpage
@@ -162,6 +186,12 @@
 \begin{why}
 		Um einen Algorithmus zu kapseln, für welchen manche Schritte allerdings nicht allgemein implementiert werden sollen/können.	
 \end{why}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{../uml/TemplateMethodPattern.png}
+	\caption{Schablonenmethode UML}
+	\label{fig3}
+\end{figure}
 
 
 \newpage
@@ -193,6 +223,14 @@
 \begin{why}
 	Um das Open-Closed Principle einzuhalten.
 \end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../uml/VisitorPattern.png}
+	\caption{Besucher UML}
+	\floatfoot{Source: (Sae1962, Commons-Wiki, 11 Jul 2017)}
+	\label{fig3}
+\end{figure}
+
 
 
 
@@ -230,7 +268,18 @@
 	
 	
 \end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../uml/AbstractFactoryPattern.png}
+	\caption{Abstrakte Fabrik UML}
+	\floatfoot{Source: (Giacomo Ritucci, Commons-Wiki, 11 Jul 2017)}
+	\label{fig3}
+\end{figure}
 
+\newpage
+\appendix
+\section{Abbilungsübersicht}
+\listoffigures
 
 
 	
