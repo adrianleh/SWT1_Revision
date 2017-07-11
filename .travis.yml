@@ -7,6 +7,9 @@ script:
 - mkdir _build
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Patterns.tex
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Patterns.tex
+branches:
+  only:
+    - master
 deploy:
   provider: releases
   api_key:
