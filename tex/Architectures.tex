@@ -7,7 +7,8 @@
 \theoremstyle{break}
 \newtheorem{defi}{Definition}[section]
 \newtheorem{ex}{Beispiel}[section]
-\newtheorem{why}{Anwendung}[section]
+\newtheorem{why}{Vorteile}[section]
+\newtheorem{whynot}{Nachteile}[section]
 \title{SWT 1: Architekturstile by example}
 \author{Adrian E. Lehmann}
 
@@ -53,7 +54,46 @@ Auch Software-Produktlinie oder \textit{engl. Program Family}
 	Auf Grund der Wiederverwendung von Komponenten wird die Entwicklung kürzer und kostengünstiger. Weiterhin werden die Programme hiermit besser wartbar, da man Funktionalitätsupdates an die ganze Produktfamilie 'auf einmal' ausliefern kann.
 \end{why}
 \newpage
+\section{Benötigte Definitionen}
+\subsection{Schicht}
+
+\textit{engl. Layer}
+\begin{defi}{Schicht}
+	Eine Schicht besteht aus Softwarekomponenten, welche durch eine (wohldefinierte) Schnittstelle zur Verfügung gestellt werden.
+\end{defi}
+
+Eine Schicht kann wiederum in mehrere sog. Partitionen aufgeteilt werden, welche untereinander auch kommunizieren können. Schichten könne i.A. untereinander nicht kommunizieren (siehe Schichtenarchitektur).
 \section{Architekturstile}
-//TODO
+\subsection{Schichtenarchitektur}
+\textit{engl. Layered Architecture}
+
+\begin{defi}
+	Eine Schichten Architektur glieder Software in einzelne Schichten
+\end{defi}
+Es gibt mehrere Typen einer Schichtenarchitektur: 
+\begin{itemize}
+	\item Eine transparente Schichtenarchitektur erlaubt es das jede Schicht auf die Schnittstelle jeder Schicht unter ihr zugreifen darf.
+	\item Eine intransparente Schichtenarchitektur erlaubt einer Schicht nur den Zugriff auf die Schnittstelle der Schicht direkt unter ihr selbst.
+\end{itemize}
+
+\begin{why}
+	\begin{enumerate}
+		\item Zur Übersichtlichkeit der Modellierung / der Software
+		\item Um Abstraktionsebenen zu definieren
+		\item Die Wartbarkeit wird verbessert, da man Schichten einfach gegen andere Implementierungen tauschen kann
+		\item Die Wiederverwertbarkeit zwischen Software wird verbessert
+		
+	\end{enumerate}
+\end{why}
+\begin{whynot}
+	\begin{enumerate}
+		\item Schichtenaufteilung manchmal schwierig
+		\item Kommunikation u. U. umständlich (gerade bei falls intransparent)
+	\end{enumerate}
+\end{whynot}
+
+
+
+
 \end{document}
 
