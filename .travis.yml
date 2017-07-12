@@ -18,6 +18,7 @@ deploy:
     secure: $key
   file:
   - _build/Patterns.pdf
+  - _build/Architectures.pdf
   skip_cleanup: true
   on:
    branch: master
