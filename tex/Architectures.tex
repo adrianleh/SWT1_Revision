@@ -17,8 +17,8 @@
 	\newpage
 	
 
-
-\section{Abstrakte Maschine}
+\section{Softwaretypen}
+\subsection{Abstrakte Maschine}
 Auch virtuelle Maschine oder \textit{engl. Virtual Machine (VM)}
 \begin{defi}
 	Eine virtuelle Maschine ist eine Menge an Befehlen und Objekten, die auf einer darunter liegenden Maschine aufbauen und diese ganz oder teilweise verdecken
@@ -32,8 +32,27 @@ Auch virtuelle Maschine oder \textit{engl. Virtual Machine (VM)}
 \end{ex}
 
 \begin{why}
-	Man verwendet virtuelle Maschinen um ein System zu kapseln und somit eine kontrollierte Umgebung zu haben. Eine kontrollierte Umgebung hat Vorteile für das Host- sowie das Gastsystem: Das Hostsystem kann unbehelligt weiter arbeiten und es erfolgen keinerlei ungewollte Änderungen durch das Gastsystem auf diesem. Das Gastsystem hingegen kann in seiner 'idealen' Umgebung verwendet werden und kann somit optimal laufen. Weiterhin kann man so Software für mehrere System einfach ausliefern: In dem diese System eine kompatible VM installiert haben, kann die erstelle Software ausgeführt werden (bestes Beispiel: Java)
+		Man verwendet virtuelle Maschinen um ein System zu kapseln und somit eine kontrollierte Umgebung zu haben. Eine kontrollierte Umgebung hat Vorteile für das Host- sowie das Gastsystem: Das Hostsystem kann unbehelligt weiter arbeiten und es erfolgen keinerlei ungewollte Änderungen durch das Gastsystem auf diesem. Das Gastsystem hingegen kann in seiner 'idealen' Umgebung verwendet werden und kann somit optimal laufen. Weiterhin kann man so Software für mehrere System einfach ausliefern: In dem diese System eine kompatible VM installiert haben, kann die erstelle Software ausgeführt werden (bestes Beispiel: Java)
 \end{why}
 
+\section{Programmfamilie}
+Auch Software-Produktlinie oder \textit{engl. Program Family}
+\begin{defi}
+	Eine Programmfamilie ist eine Menge von Software welche erhebliche Anteile von Anforderungen, Entwurfsbestandteilen oder Softwarekomponenten gemeinsam verwenden.
+	Die Programme einer solchen Familie unterscheiden sich extern durch I/O, Funktionsumfang und der Zielhardware und intern durch evtl. verschiedene Algorithmen und/oder Datenstrukturen.
+\end{defi}
+
+\begin{ex}
+	\begin{enumerate}
+		\item LibreOffice
+		\item Creative Cloud
+	\end{enumerate}
+\end{ex}
+
+\begin{why}
+	Auf Grund der Wiederverwendung von Komponenten wird die Entwicklung kürzer und kostengünstiger. Weiterhin werden die Programme hiermit besser wartbar, da man Funktionalitätsupdates an die ganze Produktfamilie 'auf einmal' ausliefern kann.
+\end{why}
+\section{Architekturstile}
+//TODO
 \end{document}
 
