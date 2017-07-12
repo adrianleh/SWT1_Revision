@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{ntheorem}
+
+\theoremstyle{break}
+\newtheorem{defi}{Definition}[section]
+\newtheorem{ex}{Beispiel}[section]
+\newtheorem{why}{Anwendung}[section]
+\title{SWT 1: Architekturstile by example}
+\author{Adrian E. Lehmann}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+
+
+\section{Abstrakte Maschine}
+Auch virtuelle Maschine oder \textit{engl. Virtual Machine (VM)}
+\begin{defi}
+	Eine virtuelle Maschine ist eine Menge an Befehlen und Objekten, die auf einer darunter liegenden Maschine aufbauen und diese ganz oder teilweise verdecken
+\end{defi}
+
+\begin{ex}
+\begin{enumerate}
+	\item JVM
+	\item KVM / VirtualBox / etc
+\end{enumerate}
+\end{ex}
+
+\begin{why}
+	Man verwendet virtuelle Maschinen um ein System zu kapseln und somit eine kontrollierte Umgebung zu haben. Eine kontrollierte Umgebung hat Vorteile für das Host- sowie das Gastsystem: Das Hostsystem kann unbehelligt weiter arbeiten und es erfolgen keinerlei ungewollte Änderungen durch das Gastsystem auf diesem. Das Gastsystem hingegen kann in seiner 'idealen' Umgebung verwendet werden und kann somit optimal laufen. Weiterhin kann man so Software für mehrere System einfach ausliefern: In dem diese System eine kompatible VM installiert haben, kann die erstelle Software ausgeführt werden (bestes Beispiel: Java)
+\end{why}
+
+\end{document}
+
