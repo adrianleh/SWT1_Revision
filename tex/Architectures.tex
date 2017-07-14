@@ -159,40 +159,54 @@ Zur Implementierung siehe das Entwurfsmuster Fassade.
 
 
 
-\subsection{Partnernetze}
-\textit{engl. bzw. allgemein verständlich: Peer to peer (P2P) network}
+\subsection{Datenablage}
+\textit{auch: Depot, engl. bzw. allgemein verständlich: Repository (Repo)}
 \begin{defi}
-	Eine Verallgemeinerung des Klient Dienstgebersystems, bei dem alle Netzwerkpartner die gleichen Aufgaben und Rechte haben.
+	Eine Datenablage erlaubt es Subsystemen, welche lose gekoppelt sind, die gehaltenen Daten abzurufen und u.U. zu modifizieren und somit über die Datenablage zu interagieren.
 \end{defi}
-\textbf{Wichtige Eigenschaften:}
+Repos eignen sich für parallelen und sequenziellen Zugriff. Achtung! Bei parallelem Zugriff ist es wichtig Synchronisation zu beachten.
+Repos können lokal oder per remote access (Fernzugriff) funktionieren
+\begin{ex}
+	\begin{itemize}
+		\item git
+		\item Package manager wie z.B. Aptitude beziehen ihre Daten aus Repos
+	\end{itemize}
+\end{ex}
+
+\subsection{Model View Controller}
+\textit{kurz: MVC}
+\begin{defi}
+	Die MVC Architektur teilt ein System in drei Teile: Das Modell, die Präsentation und die Steuerung
+\end{defi}
+\textbf{Hierbei sind:}
 \begin{itemize}
-	\item Partnernetze sind \textbf{dezentralisiert}
-	\item \textbf{Rollensymmetrie}: Alle Partner sind Klient und Dienstgeber zu gleich
-	\item \textbf{Selbstorganisation}: Die korrekte Funktionalität und das Verhalten wird durch die Interaktion und durch die Kommunikation der Partner gesteuert
-	\item \textbf{Verfügbarkeit}: Alle Daten sind redundant über mehrere Partner verteilt
-	\item \textbf{Autonomie}Autonomie: Jeder Partner arbeitet für sich ohne Einfluss der anderen
-	\item \textbf{Zuverlässigkeit}: Ein Partnernetz hat eine hohe Ausfallsicherheit auf Grund der hohen Redundanz
+	\item \textbf{Modell / \textit{engl. Model}}: Der Teil der Software, welche die Datenhaltung und Datenstruktur verwaltet
+	\item \textbf{Präsentation / \textit{engl. View}}: Der Teil der Software, welcher die (u.U. manipulierten) Daten und Objekte darstellt (häufig graphisch)
+	\item \textbf{Steuerung / \textit{engl. Controller}}: Der Teil der Software, der für Interaktion zuständig ist: Die Steuerung ändert und liest das Modell und meldet dem View diese Änderungen
 \end{itemize}
 \begin{ex}
 	\begin{itemize}
-		\item Torrent
-		\item Dezentrale Kommunikationsdienst (z.B Matrix)
-		\item Skype (Teilweise)
-		\item Blockchain (z.B. Bitcoin)
+		\item (Fast) Jede Anwendung mit einer GUI und einem Datenbankbackend  
 	\end{itemize}
 \end{ex}
 \begin{why}
 	\begin{itemize}
-		\item Sicherheit
-		\item Datenschutz
-		\item Lastverteilung
+		\item Simultane Entwicklung der einzelnen Teile möglich
+		\item Wenig Kopplung
+		\item Leicht zu Modifizieren
+		\item Mehrere Views erlauben verschiedene Darstellung der Daten (z.B. CLI & GUI)
 	\end{itemize}
 \end{why}
 \begin{whynot}
 	\begin{itemize}
-		\item Notwendige Weitergabe der Software
-		\item Leichterer Eindrang für schwarze Schafe (wenn auch gut kontrollierbar)
+		\item Steile Lernkurve
+		\item Sehr saubere Schnittstellenmodellierung nötig
+		\item Code wird häufig sehr groß
 	\end{itemize}
 \end{whynot}
+
+
+
+
 \end{document}
 
