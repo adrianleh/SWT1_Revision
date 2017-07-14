@@ -92,6 +92,18 @@ Es gibt mehrere Typen einer Schichtenarchitektur:
 	\end{enumerate}
 \end{whynot}
 Zur Implementierung siehe das Entwurfsmuster Fassade.
+\subsection{Klient / Dienstgeber}
+\textit{engl. bzw. allgemein verständlich: Client/Server}
+\begin{defi}
+	Eine Architektur in welcher ein Dienstgeber einem oder mehreren Klienten Dienste anbietet. Dabei rufen die einzelnen Klienten Funktionen auf dem Dienstgeber auf.
+\end{defi}
+\begin{itemize}
+	\item Der Klient muss die Schnittstelle des Dienstgebers kennen
+	\item Umgekehrt ist dies nicht der Fall
+\end{itemize}
+\begin{ex}
+	Ein Dienstgeber bietet häufig ein Datenbankbackend, auf welches die Klienten (meist Applikationen) zugreifen
+\end{ex}
 
 \end{document}
 
