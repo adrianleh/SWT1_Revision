@@ -92,6 +92,8 @@ Es gibt mehrere Typen einer Schichtenarchitektur:
 	\end{enumerate}
 \end{whynot}
 Zur Implementierung siehe das Entwurfsmuster Fassade.
+
+
 \subsection{Klient / Dienstgeber}
 \textit{engl. bzw. allgemein verständlich: Client/Server}
 \begin{defi}
@@ -102,8 +104,57 @@ Zur Implementierung siehe das Entwurfsmuster Fassade.
 	\item Umgekehrt ist dies nicht der Fall
 \end{itemize}
 \begin{ex}
-	Ein Dienstgeber bietet häufig ein Datenbankbackend, auf welches die Klienten (meist Applikationen) zugreifen
+	Ein Dienstgeber bietet häufig ein Datenbankbackend, auf welches die Klienten (meist Applikationen) zugreifen. Beispiele hierfür sind quasi unendlich verfügbar. Das wohl weit verbreitetste sind "WebServer" also Dienstgeber die einem eine Webseite zur Verfügung stellen.
 \end{ex}
+\begin{why}
+	\begin{itemize}
+		\item Software kann "geheim" gehalten werden
+		\item Schwachen Klienten, wie z.B. Smartphones, kann Arbeit abgenommen werden
+	\end{itemize}
+\end{why}
+\begin{whynot}
+	\begin{itemize}
+		\item Evtl. viel Rechenleistung nötig und somit teuer
+		\item Zentralisierung bietet Angriffsfläche
+		\item Datenschutz u. U. fragwürdig
+	\end{itemize}
+\end{whynot}
 
+
+\subsection{Partnernetze}
+\textit{engl. bzw. allgemein verständlich: Peer to peer (P2P) network}
+\begin{defi}
+	Eine Verallgemeinerung des Klient Dienstgebersystems, bei dem alle Netzwerkpartner die gleichen Aufgaben und Rechte haben.
+\end{defi}
+Wichtige Eigenschaften:
+\begin{itemize}
+	\item Partnernetze sind \textbf{dezentralisiert}
+	\item \textbf{Rollensymmetrie}: Alle Partner sind Klient und Dienstgeber zu gleich
+	\item \textbf{Selbstorganisation}: Die korrekte Funktionalität und das Verhalten wird durch die Interaktion und durch die Kommunikation der Partner gesteuert
+	\item \textbf{Verfügbarkeit}: Alle Daten sind redundant über mehrere Partner verteilt
+	\item \textbf{Autonomie}Autonomie: Jeder Partner arbeitet für sich ohne Einfluss der anderen
+	\item \textbf{Zuverlässigkeit}: Ein Partnernetz hat eine hohe Ausfallsicherheit auf Grund der hohen Redundanz
+\end{itemize}
+\begin{ex}
+	\begin{itemize}
+		\item Torrent
+		\item Dezentrale Kommunikationsdienst (z.B Matrix)
+		\item Skype (Teilweise)
+		\item Blockchain (z.B. Bitcoin)
+	\end{itemize}
+\end{ex}
+\begin{why}
+	\begin{itemize}
+		\item Sicherheit
+		\item Datenschutz
+		\item Lastverteilung
+	\end{itemize}
+\end{why}
+\begin{whynot}
+	\begin{itemize}
+		\item Notwendige Weitergabe der Software
+		\item Leichterer Eindrang für schwarze Schafe (wenn auch gut kontrollierbar)
+	\end{itemize}
+\end{whynot}
 \end{document}
 
