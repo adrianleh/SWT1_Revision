@@ -3,6 +3,9 @@
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 \usepackage{ntheorem}
+\usepackage{graphicx}
+\usepackage{floatrow}
+\usepackage{float}
 
 \theoremstyle{break}
 \newtheorem{defi}{Definition}[section]
@@ -173,6 +176,8 @@ Repos können lokal oder per remote access (Fernzugriff) funktionieren
 	\end{itemize}
 \end{ex}
 
+
+
 \subsection{Model View Controller}
 \textit{kurz: MVC}
 \begin{defi}
@@ -195,6 +200,7 @@ Repos können lokal oder per remote access (Fernzugriff) funktionieren
 		\item Wenig Kopplung
 		\item Leicht zu Modifizieren
 		\item Mehrere Views erlauben verschiedene Darstellung der Daten (z.B. CLI \& GUI)
+		\item Entwurfsmuster Beobachter gut einsetzbar
 	\end{itemize}
 \end{why}
 \begin{whynot}
@@ -204,9 +210,39 @@ Repos können lokal oder per remote access (Fernzugriff) funktionieren
 		\item Code wird häufig sehr groß
 	\end{itemize}
 \end{whynot}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/misc/mvc.png}
+	\caption{MVC}
+\end{figure}
 
-
-
+\subsection{Fließband}
+\textit{engl. Pipeline (auch: Pipe)}
+\begin{defi}
+	Eine Archtitekturstil, bei dem ein Objekt oder eine Menge an Objekten einen Prozess einer endlichen Anzahl Stufen durchläuft, wobei diese Stufe immer eine Datum bzw. eine Menge an Daten verarbeiten, jedoch alle Stufen gleichzeitig operieren
+\end{defi}
+Um Geschwindigkeitsdifferenzen auszugleichen haben Stufen Pufferspeicher.
+\begin{ex}
+	\begin{itemize}
+		\item Unix shell piping (z.B. aptitude search tex | grep live)
+	\end{itemize}
+\end{ex}
+\begin{why}
+	\begin{itemize}
+		\item Parallelisierung
+	\end{itemize}
+\end{why}
+\begin{whynot}
+	\begin{itemize}
+		\item Ungleiche Dauer der einzelnen Stufen können evtl. zu Problemen (trotz Buffer) führen
+	\end{itemize}
+\end{whynot}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/misc/pipeline.png}
+	\caption{Pipeline}
+	\floatfoot{Source: (Frank Jacobsen, Commons-Wiki, 14 Jul 2017)}
+\end{figure}
 
 \end{document}
 
