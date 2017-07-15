@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{floatrow}
 \usepackage{float}
+\usepackage{hyperref}
 
 \theoremstyle{break}
 \newtheorem{defi}{Definition}[section]
@@ -67,10 +68,22 @@ Auch Software-Produktlinie oder \textit{engl. Program Family}
 
 Eine Schicht kann wiederum in mehrere sog. Partitionen aufgeteilt werden, welche untereinander auch kommunizieren können. Schichten könne i.A. untereinander nicht kommunizieren (siehe Schichtenarchitektur).
 
-\subsection{Plug-in}
+\subsection{Plugin}
 \begin{defi}{Plugin}
 	Ein Plugin ist ein Einschub in ein Framework, welcher Methoden aus (abstrakten) Oberklassen oder Schnittstellen überschreibt um zusätzliche Funktionalität und/oder Anwendungslogik bereit zu stellen.
 \end{defi}
+\subsection{Universal Description, Discovery and Integration (UDDI)}
+\begin{defi}
+	Bezeichnet einen standardisierten Verzeichnisdienst, der die zentrale Rolle in SOA, welcher das Finden und Laden von Diensten unterstützt. Dieser kam aus einer Industrieinitiative von großen Firmen hervor.
+\end{defi}
+\textbf{Ziele:}
+\begin{itemize}
+	\item Maximierung der Web-Service-Wiederverwendung
+	\item Erzeugung einer Management- und Governance-Struktur
+	\item Speicherung aller Metadaten zu einem Web-Service und allen assoziierten Dokumenten
+	\item Bereitstellung von flexiblen Verwaltungs- und Zugriffsschnittstellen
+	\item Anpassung an sich ändernde Geschäftsanforderungen und eine wachsende Anzahl an Services und Nutzern
+\end{itemize}
 \section{Architekturstile}
 \subsection{Schichtenarchitektur}
 \textit{engl. Layered Architecture}
@@ -280,5 +293,39 @@ Die Einschübe werden auch \textit{Plugins genannt}. Weiterhin benutzt ein Frame
 	\end{itemize}
 \end{whynot}
 
+
+
+\subsection{Dienstorientierte Architekturen}
+\textit{engl. Service Oriented Architecture (kurz SOA)}
+\begin{defi}
+	SOA ist ein Architekturstil, bei dem Anwendungen aus (unabhängigen) Diensten (engl. services) zusammengestellt werden. Diese Dienste können über ein Kommunikationsprotokoll kommunizieren.
+\end{defi}
+Dienste können bei SOA dynamisch zur Laufzeit eingebunden werden. Diese Dienste werden durch UDDI gesucht. 
+\begin{why}
+	\begin{itemize}
+		\item Bereitstellen gekapselter Funktionalität an andere Dienste und Anwendungen
+		\item Austauschbarkeit von Diensten
+		\item Flexibilität
+		\item Lose Kopplung
+		\item Offene Standards
+	\end{itemize}
+\end{why}
+\begin{whynot}
+	\begin{itemize}
+		\item Sehr kompliziert
+		\item Testen sehr schwer, durch Service loading
+		\item Verwenden von Diensten, die untereinander inkompatibel sind, kann zu Problemen führen.
+	\end{itemize}
+\end{whynot}
+\newpage
+\appendix
+\section{Quellen}
+\begin{itemize}
+	\item Folien des IPD, KIT
+	\item Gelerntes aus Vorlesung SWT1 durch Prof. Tichy, KIT
+	\item Bruegge, Bernd, and Allen H. Dutoit. Object-oriented Software Engineering: Using UML, Patterns, and Java. Harlow (UK): Pearson, 2014. Print. 
+\end{itemize}
 \end{document}
+
+
 
