@@ -66,6 +66,11 @@ Auch Software-Produktlinie oder \textit{engl. Program Family}
 \end{defi}
 
 Eine Schicht kann wiederum in mehrere sog. Partitionen aufgeteilt werden, welche untereinander auch kommunizieren können. Schichten könne i.A. untereinander nicht kommunizieren (siehe Schichtenarchitektur).
+
+\subsection{Plug-in}
+\begin{defi}{Plugin}
+	Ein Plugin ist ein Einschub in ein Framework, welcher Methoden aus (abstrakten) Oberklassen oder Schnittstellen überschreibt um zusätzliche Funktionalität und/oder Anwendungslogik bereit zu stellen.
+\end{defi}
 \section{Architekturstile}
 \subsection{Schichtenarchitektur}
 \textit{engl. Layered Architecture}
@@ -245,6 +250,35 @@ Um Geschwindigkeitsdifferenzen auszugleichen haben Stufen Pufferspeicher.
 	\caption{Pipeline}
 	\floatfoot{Source: (Frank Jacobsen, Commons-Wiki, 14 Jul 2017)}
 \end{figure}
+
+
+\subsection{Rahmenarchitektur}
+\textit{engl. Framework}
+\begin{defi}
+	Eine Rahmenarchitektur bietet ein (fast) vollständiges Programm an, welches konzipiert ist um Lücken zu haben und somit Erweiterungen zuzulassen. Allerdings enthält das Programm die vollständige Anwendungslogik um als selbststehendes Programm agieren zu können.
+\end{defi}
+Die Einschübe werden auch \textit{Plugins genannt}. Weiterhin benutzt ein Framework das Hollywoodprinzip: "Don't call us; we call you". D.h. Die Rahmenarchitektur ruft die Methoden der plug-ins auf und i.A. nicht umgekehrt.
+\begin{ex}
+	\begin{itemize}
+		\item IntelliJ
+		\item Firefox
+		\item (jmjrst) \textit{(Bad example - for obv. reasons)}
+	\end{itemize}
+\end{ex}
+\begin{why}
+	\begin{itemize}
+		\item Grundversion der Anwendung funktoniert
+		\item Flexibilität
+		\item Wiederverwendbarkeit (z.B. JetBrains basiert viele IDEs auf IntelliJ)
+		\item Die Entwurfsmuster Strategie, Fabrikmethode, abstrakte Fabrik und Schablonenmethode sind oft anwendbar
+	\end{itemize}
+\end{why}
+\begin{whynot}
+	\begin{itemize}
+		\item Teilweise großer Overhead
+		\item Änderungen am Grundprogramm können viele Plugins nutzlos machen
+	\end{itemize}
+\end{whynot}
 
 \end{document}
 
