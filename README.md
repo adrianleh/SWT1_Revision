@@ -8,4 +8,9 @@ In diesem Repo findest du Wiederholungsmaterial für die SWT1 Vorlesung am KIT. 
 
 Falls du gerne an den Dokumenten mitarbeiten möchtest: Gerne, leg einfach los ;)
 
+Aktueller Status:
+- Architekturstile: Inhaltlich fertig
+- Entwurfsmuster: Begonnen
+- Testen: Nicht begonenn
+
 Die fertigen PDFs findest du unter Releases. Oder klick [hier](https://github.com/AdrianELehmann/SWT1_Revision/releases/latest) für die aktuellste Version.
