@@ -14,8 +14,7 @@ Aktueller Status:
 - Testen: Nicht begonnen
 
 Ziele für Inhalte
-- Architekturstile:
-  - 
+- Architekturstile
 - Entwurfsmuster
   - Variationsmuster
   -
