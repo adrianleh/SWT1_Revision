@@ -21,6 +21,10 @@ Ziele für Inhalte
 - Testen
   - Strukturtest
   - Syntaxtest
+  -
+- Parallelisierung
+  - Warum
+  - Java Beispiele
   - 
 
 Die fertigen PDFs findest du unter Releases. Oder klick [hier](https://github.com/AdrianELehmann/SWT1_Revision/releases/latest) für die aktuellste Version.
