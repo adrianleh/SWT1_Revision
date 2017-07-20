@@ -9,10 +9,10 @@ script:
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Patterns.tex
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Architectures.tex
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Architectures.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Tools.tex
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Tools.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
 branches:
   only:
     - master
@@ -25,7 +25,7 @@ deploy:
   - _build/Architectures.pdf
   - _build/Tools.pdf
   - _build/baseDefinitions.pdf
- skip_cleanup: true
+  skip_cleanup: true
   on:
    branch: master
 notifications:
