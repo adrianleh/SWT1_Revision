@@ -68,8 +68,6 @@ public class TestFlyweight {
 
    public static void main(String[] args) {
        flavorFactory = new CoffeeFlavorFactory();
-      /** Durch Zwischenspeicherung der Geschmäcker in einer HashMap in der Factory wird
-          jeweils nur ein Objekt des gleichen Geschmacks erzeugt und damit Speicherplatz gespart. */
        takeOrders("Cappuccino", 2);
        takeOrders("Cappuccino", 2);
        takeOrders("Frappe", 1);
