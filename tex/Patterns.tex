@@ -445,4 +445,31 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 	\caption{Einzelstück UML}
 \end{figure}
 
+
+\newpage
+\subsection{Fliegengewicht}
+\textit{engl. flyweight}
+\begin{defi}
+	Ein \textbf{Fliegengewicht} minimiert Datennutzung durch Datenteilung mit anderen Objekten
+\end{defi}
+\begin{ex}[Java]
+	\lstinputlisting[language=Java, caption=Fliegengewicht (Source: \"Fliegengewicht (Entwurfsmuster).\" Wikipedia. Wikimedia Foundation 28 June 2017. Web. 22 July 2017)]{../java/examples/flyweight/Flyweight.java}
+	
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Löst das Problem, dass Objekte auf Grund ihrer Anzahl bereits viel Speicher verbrauchen
+		\item Um den Objektzustand aus dem Objekt zu ziehen
+		\item Ersetzt viele Gruppen von Objekten durch relativ wenige gemeinsam genutzte Objekte
+	\end{enumerate}
+	\textbf{N.B.:} Dies geht nur wenn die Anwendung nicht von der Identität der Objekte abhängt
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/FlyweightPattern.png}
+	\caption{Flyweight UML}
+	\floatfoot{Source: (Thomasv, Wikimedia, 22 Jul 2017)}
+\end{figure}
+
+
 \end{document}
