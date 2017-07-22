@@ -268,7 +268,11 @@
 	\caption{Abstrakte Fabrik UML}
 	\floatfoot{Source: (Giacomo Ritucci, Commons-Wiki, 11 Jul 2017)}
 \end{figure}
+
+
 \newpage
+
+
 \section{Entkopplungsmuster}
 \subsection{Adapter}
 \textit{engl. bzw. allgemein verständlich: Wrapper}
@@ -290,6 +294,36 @@
 	\includegraphics[width=\textwidth]{../diagrams/uml/AdapterPattern.png}
 	\caption{Adapter UML}
 \end{figure}
+
+\newpage
+\subsection{Beobachter}
+\textit{engl. bzw. allgemein verständlich: Observer}
+\begin{defi}
+	Ein \textbf{Beobachter} definiert eine 1-zu-n Abhängigkeit zw. Objekten, so dass Änderung des einen Objektes zu einer Benachrichtigung und ggf. einer Aktualisierung der n Objekte führt.
+\end{defi}
+\begin{ex}[Java]
+	In diesem Beispiel fragen wir den Nutzer wie es ihm geht und geben jeweils seine Antwort aus. Bitte beachte: Die abstrakten Klassen (siehe UML) stammen hier aus der Java-API
+	
+	\lstinputlisting[language=Java, caption=Das konkrete Subjekt]{../java/examples/observer/InputSubject.java}
+	\lstinputlisting[language=Java, caption=Verwendung des Beochbachters auf das Subjekt]{../java/examples/observer/QuestionAsker.java}
+\end{ex}
+Bitte beachten: Im obrigen Beispiel wurden Daten an den Beobachter geliefert, dies ist i.A. nicht der Fall (siehe UML).
+\begin{why}
+	\begin{enumerate}
+		\item Subjekt \& Beobachter könnten unabh. voneinander wiederverwendet werden
+		\item Beobachter können im "Plug n Play"-Stil hinzugefügt und entfernt werden
+		\item Verhindert Zyklen in der Benutzthierarchie: Der Beobachter beobachtet ein unbekanntes Subjekt und das Subjekt hat n Beobachter
+		\item Änderungen können schnell anderen Teilen der Software bekannt gemacht werden
+		\item u. U. können auch Daten an den Beobachter geliefert werden um so auf bestimmte Aktionen reagieren zu können (häufig der Fall)
+		\item Nützlich in asynchronen Anwendungen (z.B. RSS)
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/ObserverPattern.png}
+	\caption{Beobachter UML}
+\end{figure}
+
 
 \newpage
 \appendix
