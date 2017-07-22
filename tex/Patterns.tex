@@ -367,6 +367,36 @@ Bitte beachten: Im obrigen Beispiel wurden Daten an den Beobachter geliefert, di
 	\caption{Iterator UML}
 \end{figure}
 
+\newpage
+\subsection{Stellvertreter}
+\textit{engl. Proxy}
+\begin{defi}
+	Eine \textbf{Stellvertreter} kontrolliert den Zugriff auf ein Objekt
+\end{defi}
+
+Es gibt weiterhin spezielle Typen Stellvertreter:
+\begin{enumerate}
+	\item \textbf{Protokollierender Stellvertreter:}\newline
+	 Ein protokollierender Stellvertreter zählt Referenzen auf das	eigentliche Objekt, so dass es automatisch freigegeben werden kann, wenn keine Referenzen mehr auf das Objekt existieren. Er kann auch andere Zugriffsinformationen protokollieren und leitet Zugriffe weiter. 
+	\item \textbf{Puffernder Stellvertreter:}\newline
+	Ein puffernder Stellvertreter (\textit{engl. caching proxy}) lädt ein persistentes Objekt erst dann in den Speicher, wenn es das erste Mal angesprochen wird. Er kann auch einen Puffer mit mehreren Objekten verwalten, die nach Bedarf zwischen Hintergrund- und Hauptspeicher bewegt werden.
+	\item \textbf{Fernzugriffsvertreter:}\newline
+	Ein Fernzugriffsvertreter (\textit{engl. remote proxy}) stellt einen lokalen Stellvertreter für ein Objekt in einem anderen Adressraum dar.
+\end{enumerate} 
+\begin{ex}[Java]
+	//TODO
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Falls eine funktionsreichere Referenz auf ein Objekt als ein Zeiger benötigt wird
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/ProxyPattern.png}
+	\caption{Proxy UML}
+\end{figure}
+
 
 \newpage
 \appendix
