@@ -397,6 +397,29 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 	\caption{Proxy UML}
 \end{figure}
 
+\newpage
+\subsection{Vermittler}
+\textit{engl. Mediator}
+\begin{defi}
+	Ein \textbf{Vermittler} kapselt das Zusammenspiel einer Menge von Objekten in sich.
+\end{defi}
+\begin{ex}[Java]
+	//TODO
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Vermittler fördern lose Kopplung, indem sie Objekte davon	abhalten, aufeinander explizit Bezug zu nehmen
+		\item Wenn ein Objekt sich auf zu viele Objekte bezieht, kann dieses Muster als Gegenmaßnahme verwendet werden und somit Wiederverwendbarkeit erhöhen
+		\item Wenn eine Menge von Objekten vorliegt, die in wohldefinierter, aber komplexer Weise zusammen arbeiten.
+		\item Wenn ein auf mehrere Klassen verteiltes Verhalten maßgeschneidert werden soll, ohne viele Unterklassen bilden zu müssen.
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/MediatorPattern.png}
+	\caption{Vermittler UML}
+\end{figure}
+
 
 \newpage
 \appendix
