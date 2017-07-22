@@ -324,6 +324,28 @@ Bitte beachten: Im obrigen Beispiel wurden Daten an den Beobachter geliefert, di
 	\caption{Beobachter UML}
 \end{figure}
 
+\newpage
+\subsection{Brücke}
+\textit{engl. Bridge o. Handle}
+\begin{defi}
+	Eine \textbf{Brücke} entkoppelt die Abstraktion von ihrer Implementierung
+\end{defi}
+\begin{ex}[Nicht vorh.]
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Unterklassenbildung auf sowohl Abstraktion und Implementierung möglich
+		\item Änderung einer Implementierung hat nicht unbedingt Einfluss auf Klienten
+		\item Verdeckt Implementierung vollst. vom Klienten
+		\item Spart u. U. bei Anzahl der Klassen
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/BridgePattern.png}
+	\caption{Brücke UML}
+\end{figure}
+
 
 \newpage
 \appendix
