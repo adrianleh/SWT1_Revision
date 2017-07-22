@@ -419,5 +419,30 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 	\includegraphics[width=\textwidth]{../diagrams/uml/MediatorPattern.png}
 	\caption{Vermittler UML}
 \end{figure}
-	
+
+\newpage
+\section{Zustandshandhabungsmuster}
+\subsection{Einzelstück}
+\textit{engl. singleton}
+\begin{defi}
+	Ein \textbf{Einzelstück} sichert die Alleinexistenz eines gegebenen Objektes zu
+\end{defi}
+\begin{ex}[Java]
+		\lstinputlisting[language=Java, caption=Einzelstück]{../java/examples/singleton/UniqueItem.java}
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Ein Einzelstück stellt sicher, dass wenn es nicht klar ist in welchem Teil der Software ein Objekt zuerst erstellt wird, dass es weiterhin nur eines gibt
+		\item Um eine Klasse um eine einzige Instanz zu limitieren und einen zentralen Abrufpunkt zu bieten
+		\item Es kann die einzige Instanz durch Unterklassenbildung
+		erweiterbar sein und die Klienten diese ohne Veränderung
+		ihres Quelltextes nutzen
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/SingletonPattern.png}
+	\caption{Einzelstück UML}
+\end{figure}
+
 \end{document}
