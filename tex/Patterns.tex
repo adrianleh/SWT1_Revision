@@ -346,6 +346,27 @@ Bitte beachten: Im obrigen Beispiel wurden Daten an den Beobachter geliefert, di
 	\caption{Brücke UML}
 \end{figure}
 
+\newpage
+\subsection{Iterator}
+\textit{engl. Bridge o. Handle}
+\begin{defi}
+	Eine \textbf{Brücke} ermöglicht sequenziellen Zugriff auf Objekte, ohne ihre zugrundeliegende Repräsentation offen zu legen.
+\end{defi}
+\begin{ex}[Java]
+	Siehe java.util.Iterator \& java.util.Collection
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Bietet eine einheitliche Schnittstelle zur sequenziellen Traversierung verschiedener Datenstrukturen
+		\item Mit mehreren Iteratoren kann man gleichzeitig auf verschiedene Objekte zugreifen (Robustheit)
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/IteratorPattern.png}
+	\caption{Iterator UML}
+\end{figure}
+
 
 \newpage
 \appendix
