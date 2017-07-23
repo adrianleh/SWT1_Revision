@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/AdrianELehmann/SWT1_Revision.svg?branch=master)](https://travis-ci.org/AdrianELehmann/SWT1_Revision)
 
+##PDFs: [hier](https://github.com/AdrianELehmann/SWT1_Revision/releases/latest)
+
 Hallo lieber Mitstudent!
 
 In diesem Repo findest du Wiederholungsmaterial für die SWT1 Vorlesung am KIT. Bitte beachte: Dies ist kein Ersatz für Literatur, da es das Ziel dieser Dokumente ist, anhand von Beispielen Konzepte zu verdeutlichen und nicht von null auf beizubringen.
@@ -25,6 +27,4 @@ Ziele für Inhalte
 - Parallelisierung
   - Warum
   - Java Beispiele
-  - 
-
-Die fertigen PDFs findest du unter Releases. Oder klick [hier](https://github.com/AdrianELehmann/SWT1_Revision/releases/latest) für die aktuellste Version.
+  -
