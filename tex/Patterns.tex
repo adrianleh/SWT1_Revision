@@ -472,4 +472,30 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 \end{figure}
 
 
+\newpage
+\subsection{Memento}
+\textit{engl. Memento or Token}
+\begin{defi}
+	Das Muster \textbf{Memento} dient der Erfassung und Externalisierung des internen Zustands eines Objektes, wobei sichergestellt wird, dass dadurch seine Kapselung nicht verletzt wird. So kann das Objekt zu einem späteren Zeitpunkt wieder in diesen Zustand zurückversetzt werden.
+\end{defi}
+\begin{ex}[Java]
+		\lstinputlisting[language=Java, caption=HistoricalText: Eine Klasse mit Mementoverwendung]{../java/examples/memento/HistoricalText.java}
+		\bigskip % To prevent 2 lines on prev page
+		\lstinputlisting[language=Java, caption=Wrapper von HistoricalText\, welcher zusätzlich die Mementos speichert]{../java/examples/memento/TextStorer.java}
+		\lstinputlisting[language=Java, caption=Verwendung mit Nutzerschnittstelle]{../java/examples/memento/Main.java}
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Erlaubt das Zwischenspeichern einer Momentaufnahme und das spätere Zurücksetzen auf diese (z.B. (CMD/Ctrl) + Z \& Spielspeicherstände)
+		\item Kapselt weiterhin, wenn einer direkte Schnittstelle zum ermitteln des Zustands die nicht tun würde
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/MementoPattern.png}
+	\caption{Memento UML}
+	\floatfoot{Source: (Kholodov, Igor. "Design Patterns." CIS-75 Software Specification and Design. Bristol Community College: Computer Information Systems Department, n.d. Web. 23 July 2017.)}
+\end{figure}
+
+
 \end{document}
