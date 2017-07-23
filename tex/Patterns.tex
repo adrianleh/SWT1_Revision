@@ -527,7 +527,6 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 	Das Muster \textbf{Zustand} implementiert einen Zustandsautomaten, welcher die Funktionalität basierend auf des Objekts aktuellen Zustand ändert
 \end{defi}
 \begin{ex}[N/V]
-	
 \end{ex}
 \begin{why}
 	\begin{enumerate}
@@ -537,8 +536,35 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../diagrams/uml/StatePattern.png}
-	\caption{Prototyp UML}
+	\caption{Zustand UML}
 	\floatfoot{Source: (Wikimedia commons - JoaoTrindade, apdapted by Ertwroc. 23.07.2017)}
+\end{figure}
+
+\newpage
+\section{Steuerungsmuster}
+\subsection{Befehl}
+\textit{engl. Command}
+\begin{defi}
+	Das Muster \textbf{Befehl} kapselt und parametrisiert alle nötigen Informationen, welche zur Ausführung einer Aktion oder zum auslösen eines Ereignisses benötigt werden.
+\end{defi}
+\begin{ex}[Java]
+	\lstinputlisting[language=Java, caption=Der Befehl]{../java/examples/command/Command.java}
+
+	\lstinputlisting[language=Java, caption=Aufrufer der Kommandos]{../java/examples/command/CommandHandler.java}
+	\lstinputlisting[language=Java, caption=Verwendung mit Nutzerschnittstelle]{../java/examples/command/Main.java}
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Möglich Aktionen in eine Warteschlange (\textit{engl. Queue}), in ein Logbuch oder ähnliches zu stellen
+		\item Möglichkeit einer Undo-Funktion ohne memento
+		\item Wenn ein System mittels komplexer Operationen	strukturiert werden soll, die aus primitiven Operationen aufgebaut werden (Makros)
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/CommandPattern.png}
+	\caption{Befehl UML}
+	\floatfoot{Source: (Sae1962, Commons-Wiki, 23 Jul 2017)}
 \end{figure}
 
 \end{document}
