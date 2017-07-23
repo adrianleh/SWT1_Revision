@@ -497,5 +497,29 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 	\floatfoot{Source: (Kholodov, Igor. "Design Patterns." CIS-75 Software Specification and Design. Bristol Community College: Computer Information Systems Department, n.d. Web. 23 July 2017.)}
 \end{figure}
 
+\newpage
+\subsection{Prototyp}
+\textit{engl. Prototype}
+\begin{defi}
+	Das Muster \textbf{Prototyp} lässt neue Instanzen basierend auf einer Vorlage erzeugen
+\end{defi}
+\begin{ex}[Java]
+	java.lang.Object\#clone()
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Falls der Objektbau länger dauert als eine Kopie
+		\item Um eine Klassenhierarchie von Fabriken zu vermeiden
+		\item Wenn Exemplare einer Klasse nur wenige Zustandskombinationen haben können. i.d.F. Kann man die Prototypen anlegen und kopieren
+	\end{enumerate}
+\end{why}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../diagrams/uml/PrototypePattern.png}
+	\caption{Prototyp UML}
+	\floatfoot{Source: (Wikimedia commons - Giacomo Ritucci. 23.07.2017)}
+\end{figure}
+
+
 
 \end{document}
