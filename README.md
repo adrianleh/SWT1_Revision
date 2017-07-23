@@ -16,8 +16,10 @@ Aktueller Status:
 Ziele für Inhalte
 - Architekturstile
 - Entwurfsmuster
-  - Variationsmuster
-  -
+  - Varianten muster
+  - Entkopplungsmuster
+  - Zustandshabungsmuster
+  - Steuerungsmuster
 - Testen
   - Strukturtest
   - Syntaxtest
