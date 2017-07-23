@@ -10,7 +10,7 @@ Falls du gerne an den Dokumenten mitarbeiten möchtest: Gerne, leg einfach los! 
 
 Aktueller Status:
 - Architekturstile: Inhaltlich fertig
-- Entwurfsmuster: Begonnen
+- Entwurfsmuster: Inhaltlich fertig
 - Testen: Nicht begonnen
 
 Ziele für Inhalte
