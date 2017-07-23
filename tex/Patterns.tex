@@ -567,4 +567,21 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 	\floatfoot{Source: (Sae1962, Commons-Wiki, 23 Jul 2017)}
 \end{figure}
 
+
+\newpage
+\subsection{Auftraggeber/-nehmer}
+\textit{engl. Master/Worker, ehem. Master/Slave}
+\begin{defi}
+	\textbf{Auftraggeber/-nehmer} bietet fehlertolerante und parallele Berechnung. Ein Auftraggeber verteilt die Arbeit an identische Arbeiter (Auftragnehmer) und berechnet das Endergebnis aus den	Teilergebnissen, welche die Arbeiter zurückliefern.
+\end{defi}
+\begin{ex}[Allgemein]
+	Bildberechnung: Mehrere Fäden (\textit{engl. Threads}) verändern jeweils ein Teil des Bildes mittels des gleichen Algorithmus
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Parallelisierung: Ein Auftraggeber kann Arbeit auf viele Auftragnehmer verteilen, welche auf verschiedenen Fäden (\textit{engl. Threads}) laufen
+		\item Lastverteilung (\textit{engl. Load balancing}) möglich
+	\end{enumerate}
+\end{why}
+
 \end{document}
