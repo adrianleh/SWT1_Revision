@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/AdrianELehmann/SWT1_Revision.svg?branch=master)](https://travis-ci.org/AdrianELehmann/SWT1_Revision)
 
-##PDFs: [hier](https://github.com/AdrianELehmann/SWT1_Revision/releases/latest)
+## PDFs: [hier](https://github.com/AdrianELehmann/SWT1_Revision/releases/latest)
 
 Hallo lieber Mitstudent!
 
