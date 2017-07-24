@@ -22,6 +22,7 @@ Ziele für Inhalte
   - Entkopplungsmuster
   - Zustandshabungsmuster
   - Steuerungsmuster
+- Modularer Entwurf
 - Testen
   - Strukturtest
   - Syntaxtest
