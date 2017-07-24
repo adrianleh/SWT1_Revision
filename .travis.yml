@@ -7,7 +7,7 @@ script:
 - mkdir _build
 - for f in *.tex
 - do
-	- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build $f
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build $f
 - done
 branches:
   only:
