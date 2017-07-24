@@ -5,21 +5,26 @@ before_install:
 script:
 - cd tex
 - mkdir _build
-- for f in *.tex
-- do
-	- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build $f
-- done
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Patterns.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Patterns.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Architectures.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Architectures.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Tools.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Tools.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
 branches:
   only:
     - master
-before_deploy:
-  - export RELEASE_FILE=$(ls *.pdf)
-  - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
 deploy:
   provider: releases
   api_key:
     secure: $key
-  file: "${RELEASE_FILE}"
+  file:
+  - _build/Patterns.pdf
+  - _build/Architectures.pdf
+  - _build/baseDefinitions.pdf
+  - _build/Tools.pdf
   skip_cleanup: true
   on:
    branch: master
