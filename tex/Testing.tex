@@ -25,10 +25,58 @@
 	\end{large}
 	\tableofcontents
 	\newpage
-\section{Arten von Fehlern}
-\section{Arten von Testhelfern}
-\section{Fehlerklassen}
-\section{Testverfahren}
+        \section{Arten von Fehlern}
+        \begin{defi}
+          Versagen - Abweichung des Verhaltens der Software von der Spezifikation (ein Ereignis)
+        \end {defi}
+        \begin{defi}
+          Defekt - ist ein Mangel in einem Softwareprodukt, der zu einem Versagen führen kann (ein Zustand)
+        \end{defi}
+        \begin{defi}
+          Irrtum - ist eine menschliche Aktion, die einen Defekt verursacht. (ein Vorgang)
+        \end{defi}
+        \begin{defi}
+          Fehler (Error) - Versagen | Defekt | Irrtum
+        \end{defi}
+        
+        \section{Arten von Testhelfern}
+        \begin{defi}
+          Stummel (stub) - ist ein rudimentär implementierter Teil der Software und dient als Platzhalter für noch nicht umgesetzte Funktionalität.
+        \end{defi}
+        \begin{defi}
+          Attrape (dummy) - simuliert die Implementierung zu Testzwecken
+        \end{defi}
+        \begin{defi}
+          Nachahmung (mock object) - ist eine Attrappe mit zusätzlicher Funktionalität, wie bspw. das Einstellen der Reaktion der Nachahmung auf bestimmte Eingaben oder das Überprüfen des Verhaltens des 'Klienten'
+        \end{defi}
+        
+        \section{Fehlerklassen}
+        \begin{defi}
+          Anforderungsfehler - Defekt im Pflichtenheft
+        \end{defi}
+        \begin {ex}
+          \begin{enumerate}
+          \item Inkorrekte Angabe der Benutzerwünsche
+          \item Unvollständige Angaben über funktionale Anforderungen, Leistungsanforderungen...
+          \item Inkosistenz verschiedener Anforderungen
+          \item Undurchführbarkeit
+            \end{enumerate}
+        \end{ex}
+        \begin{defi}
+          Entwurfsfehler - Defekt in der Spezifikation
+        \end{defi}
+        \begin{ex}
+          \begin{enumerate}
+          \item Unvsollständige oder fehlerhafte Umsetzung der Anforderunge
+          \item Inkosistenz der Spezifikation im Entwurf
+          \item Inkosistenz zwischen Anforderung, Spezifikaion und Entwurf
+          \end {enumerate}
+          \end{ex}
+        \begin {defi}
+          Implementierungsfehler - Defekt im Programm
+          \end{defi}
+        \section{Testverfahren}
+        
 \section{Testverfahren}
 \subsection{Klassifikation}
 \subsection{Kontrollflussorientierte (KFO) Testverfahren}
