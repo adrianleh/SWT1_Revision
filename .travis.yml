@@ -13,6 +13,12 @@ script:
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Tools.tex
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Planning.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Planning.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Testing.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Testing.tex
+
+
 branches:
   only:
     - master
