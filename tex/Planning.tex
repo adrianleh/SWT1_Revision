@@ -1,4 +1,5 @@
 \documentclass[a4paper]{article}
+\usepackage{etoc}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[light,condensed,math]{kurier}
@@ -28,17 +29,68 @@
 	\textit{engl. Requirements elicitation}
 \subsection{Methoden der Anforderungserhebung}	
 \subsubsection{Fragebögen}
+	\begin{why}
+		\begin{enumerate}
+			\item Kostengünstig
+			\item Deckt viele Leute ab (gut für große Projekte)
+			\item Relativ schnell
+		\end{enumerate}
+	\end{why}
+	\begin{whynot}
+		\begin{enumerate}
+			\item Unpräzise
+			\item Deckt evtl. nicht die eigentlichen Probleme ab
+			\item Niedrige Motivation zum Ausfüllen unter Mitarbeitern
+		\end{enumerate}
+	\end{whynot}
 \subsubsection{Interviews}
+	\begin{why}
+		\begin{enumerate}
+			\item Sehr präzise Einsicht in Anwenderwünsche
+		\end{enumerate}
+	\end{why}
+	\begin{whynot}
+		\begin{enumerate}
+			\item Deckt wenige Leute ab
+			\item Teuer
+			\end{enumerate}
+	\end{whynot}
 \subsubsection{Dokumenten- \& Aufgabenanalyse}
+	\begin{why}
+		\begin{enumerate}
+			\item Direkte Einsicht in Abläufe
+			\item Objektive Eindrücke
+		\end{enumerate}
+	\end{why}
+	\begin{whynot}
+		\begin{enumerate}
+			\item Geht nicht auf Nutzerwünsche ein
+			\item u. U. aufwendig
+		\end{enumerate}
+	\end{whynot}	
 \subsubsection{Szenarien}
-\subsubsection{Anwendungsfälle}
+	\begin{why}
+		\begin{enumerate}
+			\item Direkte Einsicht in Abläufe
+			\item Objektive Eindrücke
+		\end{enumerate}
+	\end{why}
+	\begin{whynot}
+		\begin{enumerate}
+			\item Geht nicht auf Nutzerwünsche ein
+			\item u. U. aufwendig
+		\end{enumerate}
+	\end{whynot}
+\subsection{Anwendungsfälle}
 \subsection{Typen der Anforderungen}
 \subsubsection{Funktionale Anforderungen}
 \subsubsection{Nicht-funktionale Anforderungen}
 \subsubsection{Einschränkungen}
 \subsection{Validierung von Anforderungen}
+\newpage
 \section{Lastenheft}
 \subsection{Gliederung}
+\localtableofcontents
 \subsubsection{Zielbestimmung}
 \subsubsection{Produkteinsatz}
 \subsubsection{Funktionale Anforderungen}
@@ -46,5 +98,6 @@
 \subsubsection{Nichtfunktionale Anforderungen}
 \subsubsection{Systemmodelle}
 \subsubsection{Glossar}
+\newpage
 \section{Durchführbarkeitsuntersuchung}
 \end{document}
