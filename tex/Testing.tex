@@ -208,7 +208,7 @@
         \end{defi}
 
         \begin{defi}
-          \textbf{Mehrfache Bedingungsüberdeckung} - fordert, dass die atomaren Bedingungen mit \underline{allen möglichen Kombinationen} der Wahrheitswerte W und F belegt werden.
+          \textbf{Mehrfache Bedingungsüberdeckung} - fordert, dass die atomaren Bedingungen mit \underline{allen m\"oglichen Kombinationen} der Wahrheitswerte W und F belegt werden.
         \end{defi}
 
         \begin{whynot}
@@ -234,8 +234,39 @@
         
         \subsection{Datenflussorientiert}
         -- Nothing to see here - Keep on moving --
+        % Irgendwo in den Folien? %
         \subsection{Funktionale Tests}
-        
+        \begin{defi}
+          \textbf{Funktionale Tests} \textit{engl. Functional Tests} - Testen der Spezifizierten Funktionalität, ohne Kenntniss der internen Struktur des Testlings. Demnach Testf\"alle aus Spezifikation abgeleitet.
+        \end{defi}
+        \begin{why}
+          \begin{enumerate}
+          \item Testf\"alle unabh\"angig von der Implentierung (vorher \& gleichzeitig)
+          \item Vermeidet Kurzsichtigkeit bei der Auswahl
+          \end{enumerate}
+        \end{why}
+        \begin{whynot}
+          \begin{enumerate}
+          \item M\"ogliche kritische Pfade nicht bekannt \& nicht getestet
+          \end{enumerate}
+        \end{whynot}
+
+        \begin{defi}
+          \textbf{\"Aquivalenzklassenbildung} - Bestimmung von Test durch bilden der \"Aquivalenzklassen und Auswahl von Repres\"antanten
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Grenzwertanalyse} - Weiterentwicklung der \"Aquivalenzklassenbildung. Verwendet aber nicht zuf\"allige Repres\"antanten sondern, solche die auf dem Rand liegen.
+          Also explizit von beiden Ann\"aherung aus beiden Richtungen.
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Zufallstest} \textit{engl. Random Testing} - Testen der Funktionalität mit zuf\"alligen Testf\"allen.
+        \end{defi}
+
+        \subsubsection{Verwednung von Testhelfern}
+        Objekte leben nicht isoliert, sondern arbeiten in der Anwendung zusammen. Um trotzdem ein unabh\"angiges Testen zu erm\"oglichen werden beim Testen Testhelfer eingesetzt, die die fehlende Funtionalit\"at simulieren. Dann werden die Testhelfer sukzessiv durch echte Implemntierungen ersetzt.
+
 \subsection{Leistungstests}
 \subsection{Manuelle Prüfmethoden}
 \subsection{Prüfprogramme}
