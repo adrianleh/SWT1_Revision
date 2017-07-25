@@ -9,12 +9,15 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{mathtools}
+\usepackage{soul} % Underline
 
 \theoremstyle{break}
 \newtheorem{defi}{Definition}[section]
 \newtheorem{ex}{Beispiel}[section]
 \newtheorem{why}{Vorteile}[section]
 \newtheorem{whynot}{Nachteile}[section]
+
+\setul{5pt}{.4pt}
 \title{SWT 1: Testen}
 \author{Sebastian Markgraf \& Adrian E. Lehmann}
 
@@ -164,6 +167,73 @@
         \begin{defi}
           \textbf{Pfad} - Pfade im KFG die mit dem Startknoten anfangen und beim Stoppknoten aufhören heißen \textbf{vollständige Pfade}
         \end{defi}
+
+        \begin{defi}
+          \textbf{Anweisungsüberdeckung} \textit{engl. statement coverage} - Die Teststrategie Anweisungsüberdeckung verlangt die Ausführung aller Grundblöcke des Programms P
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Zweigüberdeckung} \textit{engl. branch coverage} - Die Teststrategie Zweigüberdeckung verlangt das Traversieren aller Zweige im KFG
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Pfadüberdeckung} \textit{engl. path coverage} - Die Teststrategie Pfadüberdeckung fordert die Ausführung aller unterschiedlichen, vollständigen Pfade im Programm.
+        \end{defi}
+
+        \begin{why}
+          \begin{enumerate}
+          \item Mächtigste KFO Teststrategie
+          \end{enumerate}
+        \end{why}
+        
+        \begin{whynot}
+          \begin{enumerate}
+          \item Pfadanzahl wächst bei Schleifen stark an.
+          \item Manche Pfade nicht ausführbar durch ausschließende Bedingungen
+          \item Nicht praktikabel
+          \end{enumerate}
+        \end{whynot}
+
+        \begin{defi}
+          \textbf{Bedingungsüberdeckungsverfahren} \textit{engl. Condition coverage} - Zweigüberdeckung nicht ausreichend bei hierarchischen bedingungen. Deshalb andere Verfahren für Bedingungen.
+          \begin{enumerate}
+          \item Einfache BÜ
+          \item Mehrfache BÜ
+          \item Minimal-mehrfache BÜ
+          \end{enumerate}
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Einfache Bedingungsüberdeckung} - fordert, dass jede atomare Bedingung einmal mit Wahr \ul{und} einmal mit Falsch belegt wird.
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Mehrfache Bedingungsüberdeckung} - fordert, dass die atomaren Bedingungen mit \ul{allen möglichen Kombinationen} der Wahrheitswerte W und F belegt werden.
+        \end{defi}
+
+        \begin{whynot}
+          \begin{enumerate}
+          \item Ergibt bei n Atomaren Bedingungen \(2^n\) Kombinationen
+          \end{enumerate}
+        \end{whynot}
+
+        \begin{defi}
+          \textbf{Minimal-mehrfache Bedingungsüberdeckung} - fordert, dass \ul{jede} Bedingung, ob atomar oder zusammengesetzt, jeweils zu W und F evaluieren muss.
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Subsumieren} - Ein Testverfahren für Kritierium x subsumiert ein Testverfahren für Kriterium y, wenn jede Menge von Pfaden, die Kriterium x erfüllt auch Kriterium y erfüllt.
+        \end{defi}
+
+        % TODO - Add Hierarchie der Testverfahren %
+        
+        \begin{defi}
+          \textbf{Kurzauswertung} - die Auswertung einer zusammengesetzten Bedingung wird abgebrochen, sobald das Ergebnis feststeht.
+          --> Beeinflusst Wahl der Eingaben. Es muss mehr getestet werden.
+        \end{defi}
+
+
+        
         
 \subsection{Datenflussorientiert}
 \subsection{Funktionale Tests}
