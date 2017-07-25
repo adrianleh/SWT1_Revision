@@ -17,7 +17,7 @@
 \newtheorem{why}{Vorteile}[section]
 \newtheorem{whynot}{Nachteile}[section]
 
-\setul{5pt}{.4pt}
+\setul{1.5pt}{.4pt}
 \title{SWT 1: Testen}
 \author{Sebastian Markgraf \& Adrian E. Lehmann}
 
@@ -204,11 +204,11 @@
         \end{defi}
 
         \begin{defi}
-          \textbf{Einfache Bedingungsüberdeckung} - fordert, dass jede atomare Bedingung einmal mit Wahr \underline{und} einmal mit Falsch belegt wird.
+          \textbf{Einfache Bedingungsüberdeckung} - fordert, dass jede atomare Bedingung einmal mit Wahr \ul{und} einmal mit Falsch belegt wird.
         \end{defi}
 
         \begin{defi}
-          \textbf{Mehrfache Bedingungsüberdeckung} - fordert, dass die atomaren Bedingungen mit \underline{allen m\"oglichen Kombinationen} der Wahrheitswerte W und F belegt werden.
+          \textbf{Mehrfache Bedingungsüberdeckung} - fordert, dass die atomaren Bedingungen mit \ul{allen m\"oglichen Kombinationen} der Wahrheitswerte W und F belegt werden.
         \end{defi}
 
         \begin{whynot}
@@ -218,7 +218,7 @@
         \end{whynot}
 
         \begin{defi}
-          \textbf{Minimal-mehrfache Bedingungsüberdeckung} - fordert, dass \underline{jede} Bedingung, ob atomar oder zusammengesetzt, jeweils zu W und F evaluieren muss.
+          \textbf{Minimal-mehrfache Bedingungsüberdeckung} - fordert, dass \ul{jede} Bedingung, ob atomar oder zusammengesetzt, jeweils zu W und F evaluieren muss.
         \end{defi}
 
         \begin{defi}
@@ -237,7 +237,7 @@
         % Irgendwo in den Folien? %
         \subsection{Funktionale Tests}
         \begin{defi}
-          \textbf{Funktionale Tests} \textit{engl. Functional Tests} - Testen der Spezifizierten Funktionalität, ohne Kenntniss der internen Struktur des Testlings. Demnach Testf\"alle aus Spezifikation abgeleitet.
+          \textbf{Funktionale Tests} \textit{engl. Functional Tests} - Testen die Spezifizierte Funktionalität ohne Kenntnis der internen Struktur des Testlings. Demnach werden die Testf\"alle aus der Spezifikation abgeleitet.
         \end{defi}
         \begin{why}
           \begin{enumerate}
@@ -264,8 +264,8 @@
           \textbf{Zufallstest} \textit{engl. Random Testing} - Testen der Funktionalität mit zuf\"alligen Testf\"allen.
         \end{defi}
 
-        \subsubsection{Verwednung von Testhelfern}
-        Objekte leben nicht isoliert, sondern arbeiten in der Anwendung zusammen. Um trotzdem ein unabh\"angiges Testen zu erm\"oglichen werden beim Testen Testhelfer eingesetzt, die die fehlende Funtionalit\"at simulieren. Dann werden die Testhelfer sukzessiv durch echte Implemntierungen ersetzt.
+        \subsubsection{Verwendung von Testhelfern}
+        Objekte leben nicht isoliert, sondern arbeiten in einer Anwendung zusammen. Um trotzdem ein unabh\"angiges Testen zu erm\"oglichen werden beim Testen Testhelfer eingesetzt, welche die fehlende Funtionalit\"at simulieren. Dann werden die Testhelfer sukzessiv durch echte Implementierungen ersetzt.
 
 \subsection{Leistungstests}
 \subsection{Manuelle Prüfmethoden}
