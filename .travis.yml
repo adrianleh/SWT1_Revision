@@ -3,21 +3,7 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german
 script:
-- cd tex
-- mkdir _build
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Patterns.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Patterns.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Architectures.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Architectures.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Tools.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Tools.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build baseDefinitions.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Planning.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Planning.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Testing.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build Testing.tex
-
+- ./build.sh
 
 branches:
   only:
