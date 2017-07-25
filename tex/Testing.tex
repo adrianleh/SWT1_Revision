@@ -267,7 +267,24 @@
         \subsubsection{Verwendung von Testhelfern}
         Objekte leben nicht isoliert, sondern arbeiten in einer Anwendung zusammen. Um trotzdem ein unabh\"angiges Testen zu erm\"oglichen werden beim Testen Testhelfer eingesetzt, welche die fehlende Funtionalit\"at simulieren. Dann werden die Testhelfer sukzessiv durch echte Implementierungen ersetzt.
 
-\subsection{Leistungstests}
+        \subsubsection{Test von Zustandsautomaten}
+        Falls eine Komponente einen internen Zustand hat, k\"onnen hieraus Testf\"alle abgeleitet werden. Dabei sollte es das Ziel sein, mindestens alle Zust\"ands\"uberg\"ange einmal durchlaufen zu haben. Dies garantiert allerdings \ul{keinen} vollst\"andigen Test.
+
+        \begin{defi}
+          \textbf{\(\alpha - \omega -Zyklus \)} - bezeichnet den kompletten Lebenszyklus eines Objektes, von der Speicherallkoation (vor Ausf\"uhrung jeglicher Konstruktoren) bis zur Speicherfreigabe (nach Ausf\"uhrung der Destrukturen)
+        \end{defi}
+        
+        
+        \subsection{Leistungstests}
+        \begin{defi}
+          \textbf{Lasttest} - Testet das System/die Komponente auf Zuverl\"assigkeit und das Einhalten der Spezifikation \ul{im erlaubten Grenzbereich}.
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Stresstest} - Testet das Verhalten des Systems beim \ul{\"Uberschreiten} der definierten Grenzen
+        \end{defi}
+        
+        
 \subsection{Manuelle Prüfmethoden}
 \subsection{Prüfprogramme}
 \section{Testphasen}
