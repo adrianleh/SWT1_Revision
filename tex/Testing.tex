@@ -285,8 +285,67 @@
         \end{defi}
         
         
-\subsection{Manuelle Prüfmethoden}
-\subsection{Prüfprogramme}
+        \subsection{Manuelle Prüfmethoden}
+        \begin{why}
+        Nur durch manuelle Pr\"ufung k\"onnen semantische Fehler gefunden werden. 
+        \end{why}
+        \begin{whynot}
+          Manuelle Pr\"ufung ist sehr aufwendig und ben\"otigt viele Ressourcen und Zeit.
+          Dabei entsteht zudem psychologischer Druck auf Einzelne, welcher zu sozialen Konflikten f\"uhren kann.
+        \end{whynot}
+        
+          \textbf{Stufen der Manuellen Pr\"ufung (absteigend)}
+          \begin{enumerate}
+          \item Inspektion \textit{engl. Inspection}
+          \item \"Uberpr\"ufung \textit{engl. Review}
+          \item Durchsicht \textit{engl. Walkthrough}
+          \end{enumerate}
+        
+
+        \subsubsection{Inspektion}
+        \begin{defi}
+          \textbf{Inspektion} - Die Inspektion ist eine formale \ul{Qualit\"atssicherungstechnik}, bei der Anforderungen, Entwurf oder Code eingehend durch eine vom Autor verschiedene Person oder eine Gruppe von Personen begutachtet werden. Zweck ist das Finden von Fehlern, Verst\"oßen gegen Entwicklungsstandards und anderen Problemen.
+        \end{defi}
+
+        \begin{why}
+          \begin{enumerate}
+          \item Auf alle Softwaredokumente anwendbar
+          \item Jederzeitig und fr\"uhzeitig durchf\"uhrbar
+          \item Sehr effektiv in der Praxis
+          \item Return on Investment sehr hoch
+          \end{enumerate}
+        \end{why}
+        \begin{whynot}
+          \begin{enumerate}
+          \item Aufwendig
+          \item Verbraucht Zeit vieler Mitarbeiter
+          \item Somit teuer
+          \item ``statisch'' (im Gegensatz zum Testen)
+          \end{enumerate}
+        \end{whynot}
+
+        \begin{ex}
+          \textbf{Phasen einer Inspektion}
+        \begin{enumerate}
+        \item Vorbereitung
+        \item Individuelle Fehlersuche (IF)
+        \item Gruppensitzung (GS)
+        \item Nachbereitung
+        \item Prozessverbesserung
+        \end{enumerate}
+        \end{ex}
+
+          \textbf{Rollen}
+          \begin{enumerate}
+          \item Inspektionsleiter
+          \item Moderator
+          \item Schriftf\"uhrer
+          \item Editor
+          \item Autor
+          \end{enumerate}
+          
+        \subsection{Prüfprogramme}
+        
 \section{Testphasen}
 \subsection{Komponententest}
 \subsection{Integrationstest}
