@@ -8,6 +8,7 @@
 \usepackage{floatrow}
 \usepackage{float}
 \usepackage{hyperref}
+\usepackage{mathtools}
 
 \theoremstyle{break}
 \newtheorem{defi}{Definition}[section]
@@ -135,6 +136,33 @@
         \begin{defi}
           \textbf{Strukturerhaltende Transformation} - Tranformation der Quellsprache in die Zwischensprache, die ausschließlich Befehle, die Ausführungsreihenfolge beeinflusse, durch die Zwischensprache ersetzt.
           Zudem sollen keine Optimierungen durchgeführt werden.
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Grundblock} - bezeichnet eine maximal lange Folge fortlaufender Anweisungen der Zwischensprache.
+          \begin{itemize}
+          \item Kontrollfluss tritt am Anfang ein
+          \item Sprungbefehele nur am Ende
+          \end{itemize}
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Kontrollflussgraph} \textit{engl. control flow graph} - ein gerichteter Graph wobei
+          \begin{itemize}
+          \item N die Menge aller Grundblöcke in P
+          \item E die Menge der Kanten, wobei die Kanten die Ausführungsreihenfolge von je zwei Grundblöcken angeben.
+          \item nStart der Startblock
+          \item nStopp der Stoppblock
+          \end{itemize}
+        \end{defi}
+
+
+        \begin{defi}
+          \textbf{Zweig} \textit{engl. branch}  - Eine Kante \(e \in E\) in einem KFG G wird Zweig genannt. (gerichtet)
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Pfad} - Pfade im KFG die mit dem Startknoten anfangen und beim Stoppknoten aufhören heißen \textbf{vollständige Pfade}
         \end{defi}
         
 \subsection{Datenflussorientiert}
