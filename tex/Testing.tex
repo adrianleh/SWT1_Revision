@@ -119,6 +119,23 @@
         \end{defi}
         
         \subsection{Kontrollflussorientierte (KFO) Testverfahren}
+        \begin{defi}
+          \textbf{Zwischensprache} - Wir definieren eine Zwischensprache, bestehend aus:
+          \begin{itemize}
+          \item beliebigen Befehlen außer solchen, die die Ausführungsreihenfolge beeinflussen
+          \item bedingten Sprungbefehlen zu beliebigen aber festen Stellen
+          \item unbedingten Sprungbefehlen zu beliebigen aber festen Stellen
+          \item einer beliebigen Anzahl an Variablen
+          \end{itemize}
+          Unsere Zwischensprache orientiert sich an Assembler.
+          Die Realisierung ist unerheblich.
+          Für Anwendung betrachte die Beispiele
+        \end{defi}
+
+        \begin{defi}
+          \textbf{Strukturerhaltende Transformation} - Tranformation der Quellsprache in die Zwischensprache, die ausschließlich Befehle, die Ausführungsreihenfolge beeinflusse, durch die Zwischensprache ersetzt.
+          Zudem sollen keine Optimierungen durchgeführt werden.
+        \end{defi}
         
 \subsection{Datenflussorientiert}
 \subsection{Funktionale Tests}
