@@ -18,7 +18,8 @@ Aktueller Status:
 Verantwortlichkeit
 - Basis Definition (Sebastian)
 - Werkzeugkette (Sebastian)
-- Planung (Miriam)
+- Planung (Adrian)
+- Definition (Miriam)
 - Architekturstile (Adrian)
 - Entwurfsmuster (Adrian)
   - Varianten muster
