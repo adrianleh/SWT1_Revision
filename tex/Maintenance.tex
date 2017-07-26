@@ -12,6 +12,7 @@
 \theoremstyle{break}
 \newtheorem{defi}{Definition}[section]
 \newtheorem{ex}{Beispiel}[section]
+\newtheorem{ann}{Bemerkung}[section]
 \newtheorem{why}{Vorteile}[section]
 \newtheorem{whynot}{Nachteile}[section]
 \title{SWT 1: Die Abnahme-, Einführungs-, Wartungs- \& Pflegephase}
@@ -146,5 +147,32 @@ Bei dieser Einführung werden einzelne Personen aus der Zielgruppe der Software 
 	\end{enumerate}
 \end{whynot}
 \section{Wartung \& Pflege}
+Die \textbf{Wartung \& Pflege} beginnt mit der erfolgreichen Abnahme und Einführung eines Software-Produkts
+\newline Die Wartung \& Pflege wird wie folgt gegliedert:
+\subsection{Korrektiv}
+\subsubsection{Stabilisierung / Korrektur}
+\begin{defi}
+	Bei der \textbf{Stabilisierung / Korrektur} beschäftigt man sich mit Tätigkeiten, die dazu dienen, Defekte zu beheben
+\end{defi}
+\bigskip %So pg break doesn't mess up ann
+\begin{ann}[Second Level Defects]
+	Hierbei muss man meistens sog. \textbf{Second Level Defects} (\textit{Wartungsdefekte - Defekte, die bei der Defektbehebung auftreten}) beheben.
+	\newline
+	Die Ursachen derartiger Defekte sind meist:
+	\begin{enumerate}
+		\item Schlechte Konstruktion und Fehleranfälligkeit des ursprünglichen Produkts
+		\item Mangelhafte Dokumentation
+		\item Mangelndes Produktverständnis bei Wartungspersonal
+	\end{enumerate}
+\end{ann}
+\subsubsection{Optimierung/Leistungsverbesserung}
+Da Optimierung selten vor der Freigabe erfolgt muss dies in der Wartung getan werden. Ein Produkt wird meist veröffenlicht, sobald es funktioniert\footnote{If it compiles, upload it - ICPC}\newline
+Hierbei werden folgende Maßnahmen ergriffen:
+\begin{enumerate}
+	\item Feinoptimierung und Reduzierung des Speicherbedarfs
+	\item Zum Teil sind auch Restrukturierungen erforderlich, um die Leistungsverbesserungen zu erreichen
+\end{enumerate}
+Weiterhin gilt aber: \textbf{"Premature optimization is the root of all evil"}\textit{ - Donald Knuth}
+\subsection{Progressiv}
 
 \end{document}
