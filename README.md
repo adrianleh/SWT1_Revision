@@ -16,15 +16,20 @@ Aktueller Status:
 - Testen: Nicht begonnen
 
 Verantwortlichkeit
-- Architekturstile
-- Entwurfsmuster
+- Basis Definition (Sebastian)
+- Werkzeugkette (Sebastian)
+- Planung (Miriam)
+- Architekturstile (Adrian)
+- Entwurfsmuster (Adrian)
   - Varianten muster
   - Entkopplungsmuster
   - Zustandshabungsmuster
   - Steuerungsmuster
 - Modularer Entwurf
 - Testen (Sebastian Markgraf)
+- Wartung (Marco & Adrian)
 - Parallelisierung
-  - Warum
-  - Java Beispiele
-  -
+
+
+
+-- Agiles Development
