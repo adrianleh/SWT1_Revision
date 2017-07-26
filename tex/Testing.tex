@@ -481,19 +481,43 @@
 
           
           
-
-          
-
           \subsection{Systemtest}
-          \subsection{Abnahmetest}
-          \section{Software-Inspektionen}
-          \subsection{Phasen}
-          \subsubsection{Vorbereitung}
-          \subsubsection{Individuelle Fehlersuche (IF)}
-\subsubsection{Gruppensitzung (GS)}
-\subsubsection{Nachbereitung}
-\subsubsection{Prozessverbesserung}
-\section{Integrationsstrategien}
-\section{Systemtests}
+          Prüfung des Komplettsystems gegen die Produktdefinition. Dabei wird das System als ``black box'' betracht. Also nur von der sichtbaren Benutzerschnittstelle aus getestet. Dabei ist eine reale (bzw. sonst eine realistische) Umgebung zu verwenden.
+          \subsubsection{Klassifikation}
+          \begin{defi}
+            \textbf{Funktionaler Systemtest} - Überprüfung der funktionalen Qualitätsmerkmale Korrektheit und Vollständigkeit.
+          \end{defi}
+          \begin{defi}
+            \textbf{Nichtfunktionaler Systemtest} - Überprüfung nichtfunktionaler Qualitätsmerkmale, wie z.B.
+            \begin{itemize}
+            \item Sicherheit
+            \item Benutzbarkeit
+            \item Interoperabilität
+            \item Dokumentation
+            \item Ausfallsicherheit
+            \end{itemize}
+          \end{defi}
 
+
+          \begin{defi}
+            \textbf{Regressionstest} \textit{engl. Regression Test} - ist die Wiederholung eines bereits vollständig durchgeführten Systemtests, z.B. aufgrund von Pflege, Änderung und Korrektur des betrachteten Systems.
+          \end{defi}
+
+          \begin{why}
+            Sicherstellen, dass das System nicht in einen schlechteren Zustand als vorher zurückgefallen ist.
+          \end{why}
+          
+          \subsection{Abnahmetest}
+          \textit{engl. Acceptance Test}
+          Der Abnahmetest ist ein spezieller Systemtest, welcher
+          \begin{itemize}
+          \item allerdings vom Kunden beobachtet wird oder ggf. sogar von diesem geleitet wird
+          \item In der realen Umgebung durchgeführt wird
+          \item Nach möglichkeit echte Daten verwendet.
+          \end{itemize}
+          \begin{flushleft}
+          Dabei kann der Kunde auch eigene Testfälle vorschlagen oder gegebene modifizieren.
+          Die formale Abnahme ist die bindende Erklärung des Kunden das Produkt (mit vermerkten Nachbesserungen) anzunehmen. (juristisch)
+          \end{flushleft}
+          
 \end{document}

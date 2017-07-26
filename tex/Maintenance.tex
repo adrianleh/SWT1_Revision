@@ -16,7 +16,7 @@
 \newtheorem{why}{Vorteile}[section]
 \newtheorem{whynot}{Nachteile}[section]
 \title{SWT 1: Die Abnahme-, Einführungs-, Wartungs- \& Pflegephase}
-\author{Adrian E. Lehmann}
+\author{Adrian E. Lehmann \& Marco Schlumpp}
 
 \begin{document}
 	\maketitle
@@ -147,14 +147,41 @@ Bei dieser Einführung werden einzelne Personen aus der Zielgruppe der Software 
 	\end{enumerate}
 \end{whynot}
 \section{Wartung \& Pflege}
+
+
+
+Beginnt nach der \emph{erfolgreichen} Abnahme und Einführung des Produktes, denn:
+\begin{itemize}
+\item das Produkt kann im Alltag versagen
+\item die Umweltbedingungen verändern sich(Systemsoftware/Hardware)
+\item neue Wünsche oder Anforderungen
+\end{itemize}
+
+Falls diese Punkte nicht behoben werden, dann \emph{altert} die Software und kann damit nicht mehr für den vorgesehenen Zweck eingesetzt werden.
+
+Der Aufwand für Wartung und Pflege ist meist signifikant höher als der Aufwand bei der Entwicklung.
+
+\subsection{Wartung}
+Suchen und beheben von Defekten die im Betrieb auftreten, daher nicht planbar.
+
+\subsection{Pflege}
+Durchführung von Anpassungen, Änderungen und Erweiterungen, die im Betrieb festgestellt werden. Daher planbar.
+
+Da die Pflege einer Weiterentwicklung entspricht ist es sinnvoll den normalen Software-Entwicklungsprozess für die Aktivitäten der Pflege einzusetzen.
+
+Der Aufwand steigt mit dem Altern der Software und dem Umfang der Software(10\% pro Jahr). Daher muss irgendwann entschieden werden ob die Software weiter gepflegt wird, saniert werden soll oder durch eine neue ersetzt wird.
+
+\subsection{Kategorien der Wartung \& Pflege}
+
 Die \textbf{Wartung \& Pflege} beginnt mit der erfolgreichen Abnahme und Einführung eines Software-Produkts
 \newline Die Wartung \& Pflege wird wie folgt gegliedert:
-\subsection{Korrektiv}
-\subsubsection{Stabilisierung / Korrektur}
+\subsubsection{Korrektive Tätigkeiten (Wartung)}
+\setcounter{secnumdepth}{4} % So I can use paragraph to wrap (<- see I'm using design patterns) \subsubsubsection - which for some unknown reason does not exist -.-
+\paragraph{Stabilisierung / Korrektur}
 \begin{defi}
 	Bei der \textbf{Stabilisierung / Korrektur} beschäftigt man sich mit Tätigkeiten, die dazu dienen, Defekte zu beheben
 \end{defi}
-\bigskip %So pg break doesn't mess up ann
+
 \begin{ann}[Second Level Defects]
 	Hierbei muss man meistens sog. \textbf{Second Level Defects} (\textit{Wartungsdefekte - Defekte, die bei der Defektbehebung auftreten}) beheben.
 	\newline
@@ -165,7 +192,7 @@ Die \textbf{Wartung \& Pflege} beginnt mit der erfolgreichen Abnahme und Einfüh
 		\item Mangelndes Produktverständnis bei Wartungspersonal
 	\end{enumerate}
 \end{ann}
-\subsubsection{Optimierung/Leistungsverbesserung}
+\paragraph{Optimierung/Leistungsverbesserung}
 Da Optimierung selten vor der Freigabe erfolgt muss dies in der Wartung getan werden. Ein Produkt wird meist veröffenlicht, sobald es funktioniert\footnote{If it compiles, upload it - ICPC}\newline
 Hierbei werden folgende Maßnahmen ergriffen:
 \begin{enumerate}
@@ -173,6 +200,35 @@ Hierbei werden folgende Maßnahmen ergriffen:
 	\item Zum Teil sind auch Restrukturierungen erforderlich, um die Leistungsverbesserungen zu erreichen
 \end{enumerate}
 Weiterhin gilt aber: \textbf{"Premature optimization is the root of all evil"}\textit{ - Donald Knuth}
-\subsection{Progressiv}
+
+
+\subsubsection{Progressive Tätigkeiten (Pflege)}
+\paragraph{Anpassung/Änderung}
+Bei der \textbf{Anpassung/Änderung} wird das System sich an verändernde Umstände angepasste\newline
+Diese umfassen u.A.:
+\begin{enumerate}
+	\item Neue Systemumgebung
+	\item Änderung der Benutzerschnittstelle
+	\item Änderung der benötigten Funktionen
+\end{enumerate}
+\paragraph{Erweiterung}
+Bei der \textbf{Erweiterung} wird die Software um zusätzliche neue Funktionen ergänzt.\newline
+Dies kann aus folgenden Gründen passieren
+\begin{enumerate}
+	\item Funktionen, die noch nicht während der Entwicklung implementiert wurden, allerdings vorgesehen waren
+	\item Funktionen, die sich aus dem Betrieb der Software ergeben
+\end{enumerate} 
+\subsubsection{Alternative Klassifikation}
+  \begin{enumerate}
+  \item Korrigierende Aktivitäten
+  \item Anpassende Aktivitäten
+  \item Perfektionierende Aktivitäten
+  \end{enumerate}
+  \noindent Am meisten Zeit wird in Anpassungen und Erweiterungen investiert.
+
+
+\subsection{Software-Sanierung}
+Verstehen der alten Software und Umwandlung in eine bessere wartbare Form um schlie\ss{}lich Änderungen vorzunehmen.
+
 
 \end{document}
