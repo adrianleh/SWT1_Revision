@@ -374,16 +374,122 @@
           \item Fehler anhand von Fehlermustern finden
           \end{enumerate}
 
+          -- Beispiele von Prüfprogrammen in der Werkzeugkette behandelt --
           
-\section{Testphasen}
-\subsection{Komponententest}
-\subsection{Integrationstest}
-\subsection{Systemtest}
-\subsection{Abnahmetest}
-\section{Software-Inspektionen}
-\subsection{Phasen}
-\subsubsection{Vorbereitung}
-\subsubsection{Individuelle Fehlersuche (IF)}
+          \section{Testphasen}
+          
+          \subsection{Komponententest}
+          -- Alles davor ist Komponententest -> Struktur ändern? --
+          \subsection{Integrationstest}
+          \textbf{Voraussetzung}
+          Jede involvierte Komponente wurde bereits für sich überprüft
+
+          \begin{defi}
+            \textbf{Schrittweise Integration} - Integriere eine weitere Koponente in die Komponentenmenge und prüfe dann erneut. Fahre fort bis das System komplett integriert ist.
+          \end{defi}
+          
+          \begin{flushleft}
+          \textbf{Integrationsstrategien} \newline
+            Inkrementell - Vorgehensorientiert
+          \end{flushleft}
+          \begin{enumerate}
+          \item inside-out
+          \item outside-in
+          \item hardest-first
+          \item top-down
+          \item bottom-up
+          \end{enumerate}
+
+          \begin{flushleft}
+            Inkrementell - Testzielorientiert
+          \end{flushleft}
+          \begin{enumerate}
+          \item funktionsorientiert
+          \item nach Verfügbarkeit
+          \end{enumerate}
+
+          \begin{flushleft}
+           Unmittelbar - Testzielorientiert
+          \end{flushleft}
+          \begin{enumerate}
+          \item Big Bang
+          \item Geschäftsprozessorientiert
+          \end{enumerate}
+
+          \begin{defi}
+            \textbf{Big Bang} - Integration aller Systemkomponenten zur selben Zeit. \newline
+            ``Nichts geht bis alles geht''
+          \end{defi}
+
+          \begin{defi}
+            \textbf{Gesch\"aftsprozessorientiert} - Integration der Komponenten, welche für Prozess oder Anwendungsfall benötigt werden.
+          \end{defi}
+
+          \begin{defi}
+            \textbf{Funktionsorientiert} - Testfälle definiert nach Funktionalen Anforderungen. Schrittweise Integration und Test der Komponenten, die durch die Testfälle betroffen sind.
+          \end{defi}
+
+          \begin{defi}
+            \textbf{Nach Verfügbarkeit} - Integration von Komponenten sofort nach Abschluss ihrer Überprüfung. Reihenfolge durch Implementierungsfertigstellung festgelegt.
+          \end{defi}
+
+          \begin{defi}
+            \textbf{Top-Down} - Integration von höchster logischer Ebene her.
+          \end{defi}
+          \begin{why}
+            \begin{itemize}
+            \item Frühe Verfügbarkeit eines Simulationsmodells
+            \item ``Moralschub''
+            \end{itemize}
+          \end{why}
+          \begin{whynot}
+            \begin{itemize}
+            \item Späte Prüfbarkeit des Zusammenspiels mit Hardware und Basissoftware
+            \item Benötigt Testhelfer
+            \end{itemize}
+          \end{whynot}
+          
+
+          \begin{defi}
+            \textbf{Bottom-Up} - Integration von niedrigster logischer Ebene her.
+          \end{defi}
+          \begin{why}
+            \begin{itemize}
+            \item Leichteres Herstellen von Testbedingungen
+            \item Leichtere Interpretation von Testergebnissen
+            \end{itemize}
+          \end{why}
+          \begin{whynot}
+            \begin{itemize}
+            \item Testtreiber erforderlich
+            \item Kein früher ``Moralschub''
+            \end{itemize}
+          \end{whynot}
+            
+
+          \begin{defi}
+            \textbf{Outside-In} - Beginnt gleichzeitig auf höchster und niedrigster logischer Ebene.
+          \end{defi}
+
+          \begin{defi}
+            \textbf{Inside-Out} - Beginnt auf mittlerer Ebene und integriert in beide Richtungen.
+          \end{defi}
+
+          \begin{defi}
+            \textbf{Hardest-First} - Zuerst werden die kritischen (komplizierte und fehleranfällige) Komponenten integriert.
+          \end{defi}
+
+          
+          
+
+          
+
+          \subsection{Systemtest}
+          \subsection{Abnahmetest}
+          \section{Software-Inspektionen}
+          \subsection{Phasen}
+          \subsubsection{Vorbereitung}
+          \subsubsection{Individuelle Fehlersuche (IF)}
 \subsubsection{Gruppensitzung (GS)}
 \subsubsection{Nachbereitung}
 \subsubsection{Prozessverbesserung}
