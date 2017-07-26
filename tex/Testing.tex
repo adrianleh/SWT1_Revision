@@ -72,9 +72,9 @@
         \end{defi}
         \begin{ex}
           \begin{enumerate}
-          \item Unvsollständige oder fehlerhafte Umsetzung der Anforderunge
-          \item Inkosistenz der Spezifikation im Entwurf
-          \item Inkosistenz zwischen Anforderung, Spezifikaion und Entwurf
+          \item Unvollständige oder fehlerhafte Umsetzung der Anforderungen
+          \item Inkonsistenz der Spezifikation im Entwurf
+          \item Inkonsistenz zwischen Anforderung, Spezifikaion und Entwurf
           \end {enumerate}
           \end{ex}
         \begin {defi}
@@ -109,7 +109,7 @@
         \end{defi}
         \begin{ex}
           \begin {enumerate}
-          \item Manuelle Prüfmethoden (Inspektion, Review, Durchsichten) \textit{engl. inspection, review, walkthrough}
+          \item Manuelle Prüfmethoden (Inspektion, Review, Durchsichten) \textit{engl. Inspection, Review, Walkthrough}
           \item Prüfprogramme (statische Analyse)
           \end{enumerate}
         \end{ex}
@@ -126,7 +126,7 @@
         \begin{defi}
           \textbf{Zwischensprache} - Wir definieren eine Zwischensprache, bestehend aus:
           \begin{itemize}
-          \item beliebigen Befehlen außer solchen, die die Ausführungsreihenfolge beeinflussen
+          \item beliebigen Befehlen außer solchen, welche die Ausführungsreihenfolge beeinflussen
           \item bedingten Sprungbefehlen zu beliebigen aber festen Stellen
           \item unbedingten Sprungbefehlen zu beliebigen aber festen Stellen
           \item einer beliebigen Anzahl an Variablen
@@ -145,7 +145,7 @@
           \textbf{Grundblock} - bezeichnet eine maximal lange Folge fortlaufender Anweisungen der Zwischensprache.
           \begin{itemize}
           \item Kontrollfluss tritt am Anfang ein
-          \item Sprungbefehele nur am Ende
+          \item Sprungbefehle nur am Ende
           \end{itemize}
         \end{defi}
 
@@ -195,7 +195,7 @@
         \end{whynot}
 
         \begin{defi}
-          \textbf{Bedingungsüberdeckungsverfahren} \textit{engl. Condition coverage} - Zweigüberdeckung nicht ausreichend bei hierarchischen bedingungen. Deshalb andere Verfahren für Bedingungen.
+          \textbf{Bedingungsüberdeckungsverfahren} \textit{engl. Condition coverage} - Zweigüberdeckung nicht ausreichend bei hierarchischen Bedingungen. Deshalb andere Verfahren für Bedingungen.
           \begin{enumerate}
           \item Einfache BÜ
           \item Mehrfache BÜ
@@ -222,7 +222,7 @@
         \end{defi}
 
         \begin{defi}
-          \textbf{Subsumieren} - Ein Testverfahren für Kritierium x subsumiert ein Testverfahren für Kriterium y, wenn jede Menge von Pfaden, die Kriterium x erfüllt auch Kriterium y erfüllt.
+          \textbf{Subsumieren} - Ein Testverfahren für Kriterium x subsumiert ein Testverfahren für Kriterium y, wenn jede Menge von Pfaden, die Kriterium x erfüllt auch Kriterium y erfüllt.
         \end{defi}
 
         % TODO - Add Hierarchie der Testverfahren %
@@ -241,7 +241,7 @@
         \end{defi}
         \begin{why}
           \begin{enumerate}
-          \item Testf\"alle unabh\"angig von der Implentierung (vorher \& gleichzeitig)
+          \item Testf\"alle unabh\"angig von der Implementierung (vorher \& gleichzeitig)
           \item Vermeidet Kurzsichtigkeit bei der Auswahl
           \end{enumerate}
         \end{why}
@@ -268,10 +268,10 @@
         Objekte leben nicht isoliert, sondern arbeiten in einer Anwendung zusammen. Um trotzdem ein unabh\"angiges Testen zu erm\"oglichen werden beim Testen Testhelfer eingesetzt, welche die fehlende Funtionalit\"at simulieren. Dann werden die Testhelfer sukzessiv durch echte Implementierungen ersetzt.
 
         \subsubsection{Test von Zustandsautomaten}
-        Falls eine Komponente einen internen Zustand hat, k\"onnen hieraus Testf\"alle abgeleitet werden. Dabei sollte es das Ziel sein, mindestens alle Zust\"ands\"uberg\"ange einmal durchlaufen zu haben. Dies garantiert allerdings \ul{keinen} vollst\"andigen Test.
+        Falls eine Komponente einen internen Zustand hat, k\"onnen hieraus Testf\"alle abgeleitet werden. Dabei sollte es das Ziel sein, mindestens alle Zust\"ands\"uberg\"ange einmal durchlaufen zu haben. Dies garantiert allerdings \ul{keinen} vollständigen Test.
 
         \begin{defi}
-          \textbf{\(\alpha - \omega -Zyklus \)} - bezeichnet den kompletten Lebenszyklus eines Objektes, von der Speicherallkoation (vor Ausf\"uhrung jeglicher Konstruktoren) bis zur Speicherfreigabe (nach Ausf\"uhrung der Destrukturen)
+          \textbf{\(\alpha - \omega -Zyklus \)} - bezeichnet den kompletten Lebenszyklus eines Objektes, von der Speicherallokation (vor Ausf\"uhrung jeglicher Konstruktoren) bis zur Speicherfreigabe (nach Ausf\"uhrung der Destrukturen)
         \end{defi}
         
         
@@ -290,27 +290,27 @@
         Nur durch manuelle Pr\"ufung k\"onnen semantische Fehler gefunden werden. 
         \end{why}
         \begin{whynot}
-          Manuelle Pr\"ufung ist sehr aufwendig und ben\"otigt viele Ressourcen und Zeit.
+          Manuelle Prüfung ist sehr aufwendig und benötigt viele Ressourcen und Zeit.
           Dabei entsteht zudem psychologischer Druck auf Einzelne, welcher zu sozialen Konflikten f\"uhren kann.
         \end{whynot}
         
-          \textbf{Stufen der Manuellen Pr\"ufung (absteigend)}
+          \textbf{Stufen der Manuellen Prüfung (absteigend)}
           \begin{enumerate}
           \item Inspektion \textit{engl. Inspection}
-          \item \"Uberpr\"ufung \textit{engl. Review}
+          \item Überprüfung \textit{engl. Review}
           \item Durchsicht \textit{engl. Walkthrough}
           \end{enumerate}
         
 
         \subsubsection{Inspektion}
         \begin{defi}
-          \textbf{Inspektion} - Die Inspektion ist eine formale \ul{Qualit\"atssicherungstechnik}, bei der Anforderungen, Entwurf oder Code eingehend durch eine vom Autor verschiedene Person oder eine Gruppe von Personen begutachtet werden. Zweck ist das Finden von Fehlern, Verst\"oßen gegen Entwicklungsstandards und anderen Problemen.
+          \textbf{Inspektion} - Die Inspektion ist eine formale \ul{Qualitätssicherungstechnik}, bei der Anforderungen, Entwurf oder Code eingehend durch eine vom Autor verschiedene Person oder eine Gruppe von Personen begutachtet werden. Zweck ist das Finden von Fehlern, Verstößen gegen Entwicklungsstandards und anderen Problemen.
         \end{defi}
 
         \begin{why}
           \begin{enumerate}
           \item Auf alle Softwaredokumente anwendbar
-          \item Jederzeitig und fr\"uhzeitig durchf\"uhrbar
+          \item Jederzeitig und frühzeitig durchführbar
           \item Sehr effektiv in der Praxis
           \item Return on Investment sehr hoch
           \end{enumerate}
@@ -363,7 +363,7 @@
           \subsection{Prüfprogramme}
 
           \begin{defi}
-            \textbf{Pr\"ufprogramm} - Automatische Ausf\"uhrung der statischen Analyse w\"ahrend dem \"Ubersetzen des Queltextes
+            \textbf{Pr\"ufprogramm} - Automatische Ausf\"uhrung der statischen Analyse w\"ahrend dem \"Ubersetzen des Quelltextes
           \end{defi}
 
           \textbf{Erkennung von}
@@ -422,7 +422,7 @@
           \end{defi}
 
           \begin{defi}
-            \textbf{Gesch\"aftsprozessorientiert} - Integration der Komponenten, welche für Prozess oder Anwendungsfall benötigt werden.
+            \textbf{Geschäftsprozessorientiert} - Integration der Komponenten, welche für Prozess oder Anwendungsfall benötigt werden.
           \end{defi}
 
           \begin{defi}
@@ -513,7 +513,7 @@
           \begin{itemize}
           \item allerdings vom Kunden beobachtet wird oder ggf. sogar von diesem geleitet wird
           \item In der realen Umgebung durchgeführt wird
-          \item Nach möglichkeit echte Daten verwendet.
+          \item Nach Möglichkeit echte Daten verwendet.
           \end{itemize}
           \begin{flushleft}
           Dabei kann der Kunde auch eigene Testfälle vorschlagen oder gegebene modifizieren.
