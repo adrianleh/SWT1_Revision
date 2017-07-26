@@ -15,7 +15,7 @@ Aktueller Status:
 - Entwurfsmuster: Inhaltlich fertig
 - Testen: Nicht begonnen
 
-Ziele für Inhalte
+Verantwortlichkeit
 - Architekturstile
 - Entwurfsmuster
   - Varianten muster
@@ -23,10 +23,7 @@ Ziele für Inhalte
   - Zustandshabungsmuster
   - Steuerungsmuster
 - Modularer Entwurf
-- Testen
-  - Strukturtest
-  - Syntaxtest
-  -
+- Testen (Sebastian Markgraf)
 - Parallelisierung
   - Warum
   - Java Beispiele
