@@ -16,7 +16,7 @@
 \newtheorem{ex}{Beispiel}[section]
 \newtheorem{why}{Vorteile}[section]
 \newtheorem{whynot}{Nachteile}[section]
-\title{SWT 1: Definitionsphase}
+\title{SWT 1: Entwurfsphase Module}
 \author{M. Goetze}
 
 \begin{document}
@@ -44,8 +44,8 @@
 \end{defi}
 
 \begin{defi}[Benutztrelation]
-	Programmkomponente A benutzt Programmkomponente B genau dann, wenn A für den korrekten Ablauf die Verfügbarkeit einer korrekten Implementierung von B erfordert.//
-	
+	Programmkomponente A benutzt Programmkomponente B genau dann, wenn A für den korrekten Ablauf die Verfügbarkeit einer korrekten Implementierung von B erfordert.\\
+	\\
 	Der Graph aller Komponenten und Benutztrelationen sollte azyklisch und gerichtet sein (inkrementelles Testen somit möglich). In diesem Fall spricht man von einer \textbf{Benutzthierarchie}.
 \end{defi}
 
@@ -78,7 +78,7 @@
 \begin{why}
 	\begin{itemize}
 		\item Mehrfach-Instanziierung von Klassen
-		\item Vererbung / Polymorpie
+		\item Vererbung / Polymorphie
 		\item Variantenbildung durch Mehrfachimplementierung einer Schnittstelle
 	\end{itemize}
 \end{why}	
