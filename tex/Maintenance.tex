@@ -49,7 +49,102 @@ Im Abnahmetest werden folgende Qualitätsmerkmale folgendes geprüft:\newline
 		\subitem Flexibilität
 \end{enumerate}
 \section{Einführungsphase}
-
+Die Tätigkeiten der \textbf{Einführungsphase} umfassen:
+\begin{enumerate}
+	\item Installation des Produktes
+	\item Schulung der Benutzer und des Betriebspersonals
+	\item Inbetriebnahme des Produkts
+\end{enumerate}
+Das Ergebnis der Einführungsphase ist ein \textbf{Einführungsprotokoll}
+\subsection{Umstellung}
+Bei der Einführung eines neuen Systems ist es wichtig eine \textbf{Umstellung} vom alten auf das neue System vorzunehmen. Hierbei vor allem müssen alte Datenbestände auf das neue System angepasst werden (Falls das alte System nicht digital ist, ist der Aufwand hierbei sehr hoch). \newline Weiterhin müssen u.U. Konvertierungsprogramme erstellt werden und es muss geprüft werden, dass die Datenbestände weiterhin korrekt sind.
+\subsection{Inbetriebnahme}
+Es gibt 3 Arten der \textbf{Inbetriebnahme}:
+\subsubsection{Direkte Umstellung}
+	\begin{defi}
+		Bei der \textbf{direkten Umstellung} wird das alte System unmittelbar und vollständig durch das neue ersetzt
+	\end{defi}
+	\begin{why}
+		\begin{enumerate}
+			\item Günstig
+			\item Sofort alle Vorteile des neuen Systems verfügbar
+		\end{enumerate}
+	\end{why}
+	\begin{whynot}
+		\begin{enumerate}
+			\item Risikoreich
+		\end{enumerate}
+	\end{whynot}
+\subsubsection{Parallellauf}
+	\begin{defi}
+		Beim \textbf{Parallellauf} werden beide Systeme (das neue \& das alte) simultan eingesetzt.
+	\end{defi}
+	\begin{why}
+		\begin{enumerate}
+			\item Sicherheit, falls das neue System fehlschlägt
+			\item Sofort alle Vorteile des neuen Systems verfügbar
+		\end{enumerate}
+	\end{why}
+	\begin{whynot}
+		\begin{enumerate}
+			\item Teuer \& aufwendig
+			\item Redundanz
+			\item System müssen teilweise eingeschränkt werden
+			\item Evtl. bleiben Vorbehalte gegenüber des neuen Systems bestehen (z.B. "Ich will nicht wechseln, Windoof XP\footnote{Der Name dieser Software wurde in keinerlei Relationen zu jeglicher bestehender Software, sonder rein arbiträr gewählt} funktioniert immer noch super")
+		\end{enumerate}
+	\end{whynot}
+\subsubsection{Versuchslauf}
+\setcounter{secnumdepth}{4} % So I can use paragraph to wrap (<- see I'm using design patterns) \subsubsubsection - which for some unknown reason does not exist -.-
+Hierbei gibt es zwei zu betrachtende Möglichkeiten:
+\paragraph{1. Methode: Prüflauf}
+	\begin{defi}
+		Beim \textbf{Versuchslauf} dieser Methode arbeitet das neue System mit Daten aus vergangenen Perioden, so dass die Ergebnisse bekannt sind und überprüft werden können
+	\end{defi}
+	\begin{why}
+		\begin{enumerate}
+			\item Test unter realen Bedingungen
+			\item Sicherheit
+		\end{enumerate}
+	\end{why}
+	\begin{whynot}
+		\begin{enumerate}
+			\item Teuer \& aufwendig
+			\item Vorteile des neuen System können nicht genossen werden
+		\end{enumerate}
+	\end{whynot}
+\paragraph{2. Methode: Piloteinführung}
+\begin{defi}
+	Beim \textbf{Versuchslauf} dieser Methode werden Teile des Systems auf das neue umgestellt während andere Teile beim alten Belassen werden
+\end{defi}
+\begin{why}
+	\begin{enumerate}
+		\item Bessere Schulungsmöglichkeiten
+		\item Kein Totalausfall möglich (bzw. unwahrscheinlicher, aber immer noch mögl.)
+		\item Testen zuerst in unwichtigen Bereichen (Looking at you, WiWis)
+	\end{enumerate}
+\end{why}
+\begin{whynot}
+	\begin{enumerate}
+		\item Teuer \& aufwendig
+		\item Vorteile des neuen System können nicht von allen genossen werden
+		\item u. U. fühlen sich Teile der Firma mit dem alten System benachteiligt (oder schlimmer: bevorteiligt)
+	\end{enumerate}
+\end{whynot}
+\subsection{Einführung auf dem anonymen Markt: Pilotphase}
+\begin{defi}
+Bei dieser Einführung werden einzelne Personen aus der Zielgruppe der Software ausgewählt und es werden für diese Pilotversionen (Beta-Versionen) bereit gestellt.
+\end{defi}
+\begin{why}
+	\begin{enumerate}
+		\item Direkte Feedbackmöglichkeit
+		\item Kein Totalausfall möglich (bzw. unwahrscheinlicher, aber immer noch mögl.)
+	\end{enumerate}
+\end{why}
+\begin{whynot}
+	\begin{enumerate}
+		\item Takes time \& my Code always works before testing\footnote{Dies ist kein Nachteil, sondern eine sarkastische Darstellung, dass es keine echten Nachteile gibt}
+	\end{enumerate}
+\end{whynot}
 \section{Wartung \& Pflege}
 
 \end{document}
