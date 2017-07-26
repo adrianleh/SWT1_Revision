@@ -1,0 +1,85 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[light,condensed,math]{kurier}
+\usepackage[ngerman]{babel}
+\usepackage{ntheorem}
+\usepackage{graphicx}
+\usepackage{floatrow}
+\usepackage{float}
+\usepackage{hyperref}
+
+\theoremstyle{break}
+\newtheorem{defi}{Definition}[section]
+\newtheorem{ann}{Bemerkung}[section]
+\newtheorem{der}{Folgerung}[section]
+\newtheorem{ex}{Beispiel}[section]
+\newtheorem{why}{Vorteile}[section]
+\newtheorem{whynot}{Nachteile}[section]
+\title{SWT 1: Definitionsphase}
+\author{M. Goetze}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+\section{Modularer Entwurf}
+\begin{defi}[Modulführer]
+	Grobentwurf. Beschreibung von:
+	\begin{itemize}
+		\item Gliederung von Subsystemen in Module und andere Subsysteme/Pakete (Zerlegungsstruktur, Bestandshierarchie)
+		\item Funktion des Moduls/ Subsystems
+		\item Entwurfsentscheidungen, die das \textbf{Geheimnis} des Moduls/Subsystems sind
+	\end{itemize}
+\end{defi}
+
+\begin{defi}[Modulschnittstellen]
+	\begin{itemize}
+		\item Black-Box Beschreibung jedes Moduls
+		\subitem genau die Information, die sowohl für die Benutzung als auch die Implementierung des Moduls benötigt wird
+		\item Schnittstelle invariant bezüglich voraussehbarer Änderungen
+	\end{itemize}
+
+\end{defi}
+
+\begin{defi}[Benutztrelation]
+	Programmkomponente A benutzt Programmkomponente B genau dann, wenn A für den korrekten Ablauf die Verfügbarkeit einer korrekten Implementierung von B erfordert.//
+	
+	Der Graph aller Komponenten und Benutztrelationen sollte azyklisch und gerichtet sein (inkrementelles Testen somit möglich). In diesem Fall spricht man von einer \textbf{Benutzthierarchie}.
+\end{defi}
+
+\begin{ex}
+	3-Schichten-Architektur
+	<Datenhaltung, Applikationskern, Benutzungsschnittstelle>
+\end{ex}
+
+\begin{defi}[Modul]
+	Menge von Programmelementen (e.g. Typen, Klassen, Konstanten, Fäden, Makros etc.), die nach dem \textbf{Geheimnisprinzip} gemeinsam entworfen und geändert werden. 
+\end{defi}
+	
+\begin{defi}[Geheimnisprinzip]
+	Jedes Modul verbirgt eine wichtige Entwurfsentscheidung hinter einer wohldefinierten Schnittstelle, die sich bei einer Änderung der Entscheidung nicht mehr ändert. (David Parnas)
+\end{defi}
+
+\section{Objektorientierter Entwurf}
+	Prinzipien des modularen Entwurfes weiterhin gültig (e.g. Geheimnisprinzip)
+\subsection{Externer Entwurf}
+\begin{itemize}
+	\item Paket und Klasse statt Modul
+	\item Paket: Zusammenfassung mehrerer Klassen, die gemeinsame Entwurfsentscheidungen kapseln
+	\item Schnittstellen der Klassen, abstrakten Klassen und Interfaces statt Modulschnittstellen
+\end{itemize}
+\subsection{Interner Entwurf}
+\begin{itemize}
+	\item Dokumentation der Benutztrelation zwischen Paketen und allein stehenden Klassen
+	\item Feinentwurf: Beschreibung der modulinternen Datenstrukturen, Algorithmen etc. (e.g. Pseudocode) 
+\end{itemize}	
+\begin{why}
+	\begin{itemize}
+		\item Mehrfach-Instanziierung von Klassen
+		\item Vererbung / Polymorpie
+		\item Variantenbildung durch Mehrfachimplementierung einer Schnittstelle
+	\end{itemize}
+\end{why}	
+\end{document}
