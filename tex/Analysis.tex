@@ -1,0 +1,115 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[light,condensed,math]{kurier}
+\usepackage[ngerman]{babel}
+\usepackage{ntheorem}
+\usepackage{graphicx}
+\usepackage{floatrow}
+\usepackage{float}
+\usepackage{hyperref}
+
+\theoremstyle{break}
+\newtheorem{defi}{Definition}[section]
+\newtheorem{ann}{Bemerkung}[section]
+\newtheorem{der}{Folgerung}[section]
+\newtheorem{ex}{Beispiel}[section]
+\newtheorem{why}{Vorteile}[section]
+\newtheorem{whynot}{Nachteile}[section]
+\title{SWT 1: Modellierung}
+\author{M. Goetze}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+\section{Ziel}
+\begin{itemize}
+	\item Pflichtenheft
+	\subitem Definition des zu erstellenden Systems (\textbf{vollständig}, \textbf{exakt})
+\end{itemize}
+\begin{ann}
+	Beachte: Beschreibung \textbf{was} zu implementieren ist, nicht \textbf{wie} (z.B. Keine Algorithmen und Datenstrukturen)
+\end{ann}
+
+Ziel der Definitionsphase ist es ein Modell zu entwickeln. 
+
+\begin{defi}[Modell]
+	Abstraktion von existierenden oder imaginären
+	\begin{itemize}
+		\item Dingen, Personen, Konzepten etc.
+		\item Abläufen
+		\item Beziehungen
+	\end{itemize}
+
+\end{defi}
+
+\begin{defi}[Funktionales Modell]
+	\begin{itemize}
+		\item Szenarien
+		\item Anwendungsfall-Diagramme
+		\item (aus dem Lastenheft)
+	\end{itemize}
+	
+\end{defi} 
+\begin{defi}[Objektmodell]
+	\begin{itemize}
+		\item Klassendiagramm
+		\item Objektdiagramm (Instanzen im Klassendiagrammen)
+		\item statisch
+	\end{itemize}
+\end{defi}
+\begin{defi}[dynamisches Modell]
+	\begin{itemize}
+	\item Aktivitätsdiagramm
+	\subitem Beschreibung paralleler / sequenzieller \textbf{Abläufe}
+	\item Sequenzdiagramm
+	\subitem Beschreibung der \textbf{Aufrufabläufe}
+	\item Zustandsdiagramm
+	\subitem \textbf{Zustandsübergänge} innerhalb eines einzelnen Objektes
+\end{itemize}
+\end{defi} 
+
+\section{statisches Modell}
+Entwicklung eines \textbf{statischen Modells}. 
+\subsection{syntaktische Analyse}
+Annäherung zum Erstellen eines UML-Klassendiagramms anhand eines Textdokumentes.
+	
+\begin{tabular}{|c|c|c|}
+	\hline 
+	\textbf{Wortart} & \textbf{Modellelement} & \textbf{Beispiel} \\
+	\hline 
+	Nomen & Klasse & Pizza, Spaghetto \\ 
+	\hline 
+	Namen & Exemplar & Walter \\ 
+	\hline 
+	Intransitives Verb & Botschaft & leben, schlafen  \\ 
+	\hline 
+	Transitives Verb & Assoziation & jmd. hassen, etw. zerstören \\ 
+	\hline 
+	Verb sein & Vererbung & ist eine (Art von) Störung  \\ 
+	\hline 
+	Verb haben & Aggregation & hat ein ...  \\ 
+	\hline 
+	Modalverb & Zusicherung  & müssen, sollen etc.  \\ 
+	\hline 
+	Adjektiv & Attribut & bizarr  \\ 
+	\hline 
+\end{tabular}
+ 
+\section{Dynamisches Modell}
+\begin{itemize}
+	\item Quelle: Szenarien, Anwendungsfälle
+	\item Ergebnis: Sequenz-, Aktivitätsdiagramm
+	\item Zweck:
+	\subitem  \textbf{Operationen} identifizieren
+	\subitem Vollständigkeit und Korrektheit des statisches System \textbf{überprüfen}
+	\subitem Grundlage für \textbf{Systemtests}
+\end{itemize}
+\section{Subsysteme}
+\begin{itemize}
+	\item \textbf{innerhalb} eines Subsystems \textbf{starke Kohäsion}
+	\item \textbf{zwischen} den Subsystemen \textbf{schwache Kopplung}
+\end{itemize}
+
+\end{document}
