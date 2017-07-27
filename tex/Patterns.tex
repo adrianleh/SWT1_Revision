@@ -587,4 +587,71 @@ Es gibt weiterhin spezielle Typen Stellvertreter:
 	\end{enumerate}
 \end{why}
 
+
+\newpage
+\section{Bequemlichkeitsmuster}
+\subsection{Bequemlichkeitsklasse}
+\textit{engl. convenience class}
+\begin{defi}
+	Das Muster \textbf{Bequemlichkeitsklasse} vereinfacht den Methodenaufruf durch Bereithaltung der
+	Parameter in einer speziellen Klasse
+\end{defi}
+\begin{ex}[Java]
+	\lstinputlisting[language=Java, caption=Die Bequemlichkeitsklasse]{../java/examples/convclass/Multiply.java}
+
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Erspart Schreibarbeit und Wiederholungen
+	\end{enumerate}
+\end{why}
+\newpage
+\subsection{Bequemlichkeitsmethode}
+\textit{engl. convenience method}
+\begin{defi}
+	Das Muster \textbf{Bequemlichkeitsmethode} vereinfacht den Methodenaufruf durch die Bereitstellung häufig
+	genutzter Parameterkombinationen in zusätzlichen Methoden
+	(Überladen)
+\end{defi}
+\begin{ex}[Java]
+	\lstinputlisting[language=Java, caption=Die Bequemlichkeitsmethode]{../java/examples/convmethod/Multiply.java}
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Erspart Schreibarbeit und Wiederholungen
+	\end{enumerate}
+\end{why}
+\newpage
+\subsection{Fassade}
+
+\begin{defi}
+	Das Muster \textbf{Fassade} bietet eine einheitliche Schnittstelle zu einer Menge von Schnittstellen eines Subsystems.\newline
+	Die Fassadenklasse definiert eine abstrakte Schnittstelle, welche
+	die Benutzung des Subsystems vereinfacht
+\end{defi}
+\begin{ex}[N/V]
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Bietet einfache Sicht auf das Subsystem
+		\item Die
+		Einführung einer Fassade entkoppelt die Subsysteme von Klienten und anderen Subsystemen
+	\end{enumerate}
+\end{why}
+
+\newpage
+\subsection{Nullobjekt}
+
+\begin{defi}
+	Das Muster \textbf{Nullobjekt} stellt einen Stellvertreter zur Verfügung, der die gleiche
+	Schnittstelle bietet, aber nichts tut.
+\end{defi}
+\begin{ex}[N/V]
+\end{ex}
+\begin{why}
+	\begin{enumerate}
+		\item Wenn das Nichtstun von Nöten ist
+	\end{enumerate}
+\end{why}
+
 \end{document}
