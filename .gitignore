@@ -270,3 +270,6 @@ flycheck_*.el
 
 # directory configuration
 .dir-locals.el
+
+# Compressed Zip FIles
+*.zip

@@ -15,6 +15,7 @@ deploy:
   file_glob: true
   file:
   - _build/*.pdf
+  - _build/completePDF.zip
   skip_cleanup: true
   on:
    branch: master
