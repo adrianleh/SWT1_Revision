@@ -10,10 +10,6 @@ In diesem Repo findest du Wiederholungsmaterial für die SWT1 Vorlesung am KIT. 
 
 Falls du gerne an den Dokumenten mitarbeiten möchtest: Gerne, leg einfach los! ;)
 
-Aktueller Status:
-- Architekturstile: Inhaltlich fertig
-- Entwurfsmuster: Inhaltlich fertig
-- Testen: Nicht begonnen
 
 Verantwortlichkeit
 - Basis Definition (Sebastian)
@@ -27,7 +23,7 @@ Verantwortlichkeit
   - Zustandshabungsmuster
   - Steuerungsmuster
 - Modularer Entwurf
-- Testen (Sebastian Markgraf)
+- Testen (Sebastian)
 - Wartung (Marco & Adrian)
 - Parallelisierung
-- Vorgehensmodelle (Sebastian Markgraf)
+- Vorgehensmodelle (Sebastian)
