@@ -30,7 +30,4 @@ Verantwortlichkeit
 - Testen (Sebastian Markgraf)
 - Wartung (Marco & Adrian)
 - Parallelisierung
-
-
-
--- Agiles Development
+- Vorgehensmodelle (Sebastian Markgraf)
